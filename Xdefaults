@@ -1,0 +1,72 @@
+urxvt.cursorBlink: 1
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+URxvt.depth: 32
+URxvt.saveLines:0
+URxvt.scrollBar: false
+URxvt.iconFile: /home/william/.local/share/icons/Ursa icon theme/128x128/apps/terminator.png
+urxvt.font: xft:Ubuntu Mono:size=10
+!main colorscheme
+urxvt*cursorColor: #DCDCCC
+urxvt.background:  #383838
+urxvt.foreground:  #DCDCCC
+urxvt*color0: #383838
+urxvt*color1: #CC9393
+urxvt*color2: #7F9F7F
+urxvt*color3: #D0BF8F
+urxvt*color4: #DFAF8F
+urxvt*color5: #9C6363
+urxvt*color6: #8CD0D3
+urxvt*color7: #DCDCCC
+urxvt*color8: #3F3F3F
+urxvt*color9: #DCA3A3
+urxvt*color10: #8FB28F
+urxvt*color11: #E0CF9F
+urxvt*color12: #F0DFAF
+urxvt*color13: #AC7373
+urxvt*color14: #93E0E3
+urxvt*color15: #FFFFEF
+!Disables the insanely annoying Ctrl+Shift shortcut that enters ISO14755 mode
+URxvt.iso14755: False
+urxvt.keysym.Shift-Control-W: string:d
+urxvt.keysym.Shift-Control-V: perl:clipboard:paste
+urxvt.keysym.Shift-Control-C: perl:clipboard:copy
+urxvt.keysym.Shift-Control-R: string:rs_tag -a 'rs_agent_dev:download_cookbooks_once=true'\n
+!bind control-shift-arrows to move between panes in tmux
+urxvt.keysym.Shift-Control-Up: string:OA
+urxvt.keysym.Shift-Control-Down: string:OB
+urxvt.keysym.Shift-Control-Left: string:OD
+urxvt.keysym.Shift-Control-Right: string:OC
+!bind alt-arrows to resize panes in tmux
+urxvt.keysym.Meta-Up: string:Oa
+urxvt.keysym.Meta-Down: string:Ob
+urxvt.keysym.Meta-Left: string:Od
+urxvt.keysym.Meta-Right: string:Oc
+! change tmux windows
+urxvt.keysym.Shift-Control-Prior: string:p
+urxvt.keysym.Shift-Control-Next: string:n
+!bind control-shift-z to zoom into tmux pane
+urxvt.keysym.Shift-Control-Z: string:z
+!bind to split windows into panes with | and -
+urxvt.keysym.Shift-Control-bar: string:%
+urxvt.keysym.Control-underscore: string:"
+
+!Alternate color scheme
+#urxvt.background: #1f1f1f1f1f1f
+#urxvt.foreground: #dcdcdcdccccc
+#urxvt.cursorColor: #8f8fafaf9f9f
+#urxvt.color0: #3f3f3f3f3f3f
+#urxvt.color1: #e8e893939393
+#urxvt.color2: #9e9ecece9e9e
+#urxvt.color3: #f0f0dfdfafaf
+#urxvt.color4: #8c8cd0d0d3d3
+#urxvt.color5: #c0c0bebed1d1
+#urxvt.color6: #dfdfafaf8f8f
+#urxvt.color7: #efefefefefef
+#urxvt.color8: #3f3f3f3f3f3f
+#urxvt.color9: #e8e893939393
+#urxvt.color10: #9e9ecece9e9e
+#urxvt.color11: #f0f0dfdfafaf
+#urxvt.color12: #8c8cd0d0d3d3
+#urxvt.color13: #c0c0bebed1d1
+#urxvt.color14: #dfdfafaf8f8f
+#urxvt.color15: #efefefefefef
