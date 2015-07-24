@@ -12,7 +12,7 @@ PROMPT_COMMAND='__git_ps1 \["\u@\h \w"] "\\\$ "'
 
 export PATH=$PATH:/home/william/Scripts:/home/william/.gem/ruby/2.1.0/bin:/opt/android-sdk/platform-tools:/home/william/.gem/ruby/2.2.0/bin
 export TERM=xterm-256color
-alias home="ssh -L 5901:localhost:5901 kray"
+alias home="ssh -X -C -L 5901:localhost:5901 kray"
 alias vpn="/home/william/Scripts/vpn.sh"
 alias tmux="/usr/bin/tmux -2"
 alias wow="git status"
