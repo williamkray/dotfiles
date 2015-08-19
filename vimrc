@@ -51,5 +51,19 @@ autocmd VimLeave * call system("tmux set automatic-rename on")
 
 " searching for text
 set incsearch
+" highlight all search instances
+set hlsearch
+set ignorecase
+set smartcase
+
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
+
+" allow hidden buffers so you can :e a new file without
+" vim whining that you have unsaved changes
+set hidden
+
+" Fix 256-color in tmux and vim
+if &term =~ '256color'
+  set t_ut=
+endif
