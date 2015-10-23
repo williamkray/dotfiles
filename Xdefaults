@@ -10,33 +10,36 @@ urxvt.font: xft:Ubuntu Mono:size=10
 URxvt.iso14755: False
 
 !keyboard shortcuts
-urxvt.keysym.Shift-Control-W: string:d
+! \001 is ctrl+A, my tmux prefix
+! \015 is return
+! these keyboard shortcuts (tmux specific) don't work with tmux 2.1 for some reason
+urxvt.keysym.Shift-Control-W: string:\001d
 urxvt.keysym.Shift-Control-V: perl:clipboard:paste
 urxvt.keysym.Shift-Control-C: perl:clipboard:copy
 urxvt.keysym.Shift-Control-R: string:rs_tag -a 'rs_agent_dev:download_cookbooks_once=true'\n
 
 !bind control-shift-arrows to move between panes in tmux
-urxvt.keysym.Shift-Control-Up: string:OA
-urxvt.keysym.Shift-Control-Down: string:OB
-urxvt.keysym.Shift-Control-Left: string:OD
-urxvt.keysym.Shift-Control-Right: string:OC
+urxvt.keysym.Shift-Control-Up: string:\001:select-pane -U\015
+urxvt.keysym.Shift-Control-Down: string:\001:select-pane -D\015
+urxvt.keysym.Shift-Control-Left: string:\001:select-pane -L\015
+urxvt.keysym.Shift-Control-Right: string:\001:select-pane -R\015
 
 !bind alt-arrows to resize panes in tmux
-urxvt.keysym.Meta-Up: string:Oa
-urxvt.keysym.Meta-Down: string:Ob
-urxvt.keysym.Meta-Left: string:Od
-urxvt.keysym.Meta-Right: string:Oc
+urxvt.keysym.Meta-Up: string:\001:resize-pane -U\015
+urxvt.keysym.Meta-Down: string:\001:resize-pane -D\015
+urxvt.keysym.Meta-Left: string:\001:resize-pane -L\015
+urxvt.keysym.Meta-Right: string:\001:resize-pane -R\015
 
 ! change tmux windows
-urxvt.keysym.Shift-Control-Prior: string:p
-urxvt.keysym.Shift-Control-Next: string:n
+urxvt.keysym.Shift-Control-Prior: string:\001p
+urxvt.keysym.Shift-Control-Next: string:\001n
 
 !bind control-shift-z to zoom into tmux pane
-urxvt.keysym.Shift-Control-Z: string:z
+urxvt.keysym.Shift-Control-Z: string:\001z
 
 !bind to split windows into panes with | and -
-urxvt.keysym.Shift-Control-bar: string:%
-urxvt.keysym.Control-underscore: string:"
+urxvt.keysym.Shift-Control-bar: string:\001%
+urxvt.keysym.Control-underscore: string:\001"
 
 !main colorscheme
 *.cursorColor: #DCDCCC
