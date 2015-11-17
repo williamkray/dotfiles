@@ -9,6 +9,9 @@ urxvt.font: xft:Ubuntu Mono:size=10
 !Disables the insanely annoying Ctrl+Shift shortcut that enters ISO14755 mode
 URxvt.iso14755: False
 
+!shift+up changes directory up in the file tree
+urxvt.keysym.Shift-Up: string:cd ..\n
+
 !keyboard shortcuts
 ! \001 is ctrl+A, my tmux prefix
 ! \015 is return
