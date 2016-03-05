@@ -29,7 +29,9 @@ set autoindent
 set linebreak
 set breakindent
 
-colorscheme zenburn
+let g:hybrid_custom_term_colors = 1
+set background=dark
+colorscheme hybrid
 
 " set default register to the X11 clipboard
 set clipboard=unnamedplus
