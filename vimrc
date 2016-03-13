@@ -11,8 +11,10 @@ set mouse=a
 set ttyfast
 
 " toggle filesystem tree navigation window
-map <C-p> :NERDTreeToggle<CR>
+map <C-b> :NERDTreeToggle<CR>
 
+" set tab spacing based on filetype
+filetype plugin indent on
 " tab size is 2 spaces
 set tabstop=2
 set expandtab
@@ -22,7 +24,7 @@ set shiftwidth=2
 set autoindent
 
 " quick cycle through buffers
-":nnoremap <C-n> :bnext<CR>
+:nnoremap <C-m> :bnext<CR>
 :nnoremap <C-n> :bprevious<CR>
 
 " pretty word-wrap formatting
