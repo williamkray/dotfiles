@@ -13,6 +13,7 @@ URxvt.iso14755: False
 URxvt.resize-font.smaller: C-minus
 URxvt.resize-font.bigger: C-equal
 URxvt.resize-font.reset: C-0
+URxvt.font-size.step: 1
 
 !shift+up changes directory up in the file tree
 urxvt.keysym.Shift-Up: string:cd ..\n
