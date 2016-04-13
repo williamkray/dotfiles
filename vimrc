@@ -11,7 +11,7 @@ set mouse=a
 set ttyfast
 
 " toggle filesystem tree navigation window
-map <C-b> :NERDTreeToggle<CR>
+"map <C-b> :NERDTreeToggle<CR>
 
 " set tab spacing based on filetype
 filetype plugin indent on
