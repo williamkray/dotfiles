@@ -5,6 +5,7 @@
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 export EDITOR=vim
+export BROWSER=google-chrome-stable
 ## some pacaur vars
 export BUILDDIR="/tmp/pacaurtmp-$USER"
 export XDG_CACHE_HOME=/dev/shm

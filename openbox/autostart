@@ -1,0 +1,10 @@
+feh --bg-max --randomize --no-fehbg --bg-fill --no-xinerama ~/ownCloud/Wallpapers/geometric/*
+dunst &
+xfce4-volumed &
+compton --config /dev/null -b
+xfce4-panel &
+netmon &
+pasystray &
+blueman-applet &
+keepassx ~/ownCloud/Secure/weck.kdbx &
+autorandr.sh &
