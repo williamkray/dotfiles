@@ -1,5 +1,5 @@
 feh --bg-max --randomize --no-fehbg --bg-fill --no-xinerama ~/ownCloud/Wallpapers/geometric/*
-dunst &
+obsetlayout 0 2 2 0
 xfce4-volumed &
 compton --config /dev/null -b
 xfce4-panel &
