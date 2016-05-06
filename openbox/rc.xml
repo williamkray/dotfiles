@@ -324,6 +324,11 @@
         <command>autorandr.sh</command>
       </action>
     </keybind>
+    <keybind key="C-A-BackSpace">
+      <action name="Execute">
+        <command>systemctl suspend</command>
+      </action>
+    </keybind>
     <keybind key="C-A-Delete">
       <action name="Exit">
         <prompt>no</prompt>
@@ -1015,6 +1020,26 @@
 -->
     <application class="*">
       <decor>no</decor>
+    </application>
+    <application name="*rxvt">
+      <position>
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
+    <application name="*chrome*">
+      <position>
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
+    <application name="*thunar*">
+      <position>
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
+    <application name="*firefox*">
       <position>
         <x>center</x>
         <y>center</y>
@@ -1024,13 +1049,6 @@
       <position>
         <x>center</x>
         <y>center</y>
-        <monitor>mouse</monitor>
-      </position>
-    </application>
-    <application name="*notifyd">
-      <position>
-        <x>-20</x>
-        <y>20</y>
         <monitor>mouse</monitor>
       </position>
     </application>
