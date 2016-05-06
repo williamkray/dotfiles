@@ -54,7 +54,7 @@
       S: shade (roll up/down)
       D: omnipresent (on all desktops).
   -->
-    <keepBorder>no</keepBorder>
+    <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Ubuntu</name>
@@ -120,11 +120,13 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>2</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>Stuff</name>
-      <name>CIS</name>
+      <name>P</name>
+      <name>W</name>
+      <name>3</name>
+      <name>4</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -192,13 +194,13 @@
     <keybind key="C-A-Up">
       <action name="GoToDesktop">
         <to>up</to>
-        <wrap>no</wrap>
+        <wrap>yes</wrap>
       </action>
     </keybind>
     <keybind key="C-A-Down">
       <action name="GoToDesktop">
         <to>down</to>
-        <wrap>no</wrap>
+        <wrap>yes</wrap>
       </action>
     </keybind>
     <keybind key="C-W-A-Left">
@@ -216,13 +218,13 @@
     <keybind key="C-W-A-Up">
       <action name="SendToDesktop">
         <to>up</to>
-        <wrap>no</wrap>
+        <wrap>yes</wrap>
       </action>
     </keybind>
     <keybind key="C-W-A-Down">
       <action name="SendToDesktop">
         <to>down</to>
-        <wrap>no</wrap>
+        <wrap>yes</wrap>
       </action>
     </keybind>
     <keybind key="W-F1">
@@ -359,7 +361,7 @@
       </action>
     </keybind>
     <!-- expose picker -->
-    <keybind key="C-A-W-Up">
+    <keybind key="C-Up">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -586,6 +588,7 @@
         <action name="FocusToBottom"/>
         <action name="Unfocus"/>
       </mousebind>
+      <!--
       <mousebind button="A-Up" action="Click">
         <action name="GoToDesktop">
           <to>previous</to>
@@ -616,6 +619,7 @@
           <to>next</to>
         </action>
       </mousebind>
+      -->
       <mousebind button="A-Left" action="DoubleClick">
         <action name="ToggleMaximizeFull"/>
       </mousebind>
@@ -1009,10 +1013,24 @@
 
   # end of the example
 -->
+    <application class="*">
+      <decor>no</decor>
+      <position>
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
     <application name="gmrun">
       <position>
         <x>center</x>
         <y>center</y>
+        <monitor>mouse</monitor>
+      </position>
+    </application>
+    <application name="*notifyd">
+      <position>
+        <x>-20</x>
+        <y>20</y>
         <monitor>mouse</monitor>
       </position>
     </application>
