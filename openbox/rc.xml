@@ -34,7 +34,7 @@
     <!-- with Smart placement on a multi-monitor system, try to place new windows
        on: 'Any' - any monitor, 'Mouse' - where the mouse is, 'Active' - where
        the active window is, 'Primary' - only on the primary monitor -->
-    <primaryMonitor>Mouse</primaryMonitor>
+    <primaryMonitor>Active</primaryMonitor>
     <!-- The monitor where Openbox should place popup dialogs such as the
        focus cycling popup, or the desktop switch popup.  It can be an index
        from 1, specifying a particular monitor.  Or it can be one of the
@@ -546,6 +546,9 @@
         <monitor>next</monitor>
       </action>
     </keybind>
+    <keybind key="W-b">
+      <action name="ToggleDecorations"/>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
@@ -656,7 +659,6 @@
         <action name="FocusToBottom"/>
         <action name="Unfocus"/>
       </mousebind>
-      <!--
       <mousebind button="Right" action="Press">
         <action name="Focus"/>
         <action name="Raise"/>
@@ -664,7 +666,6 @@
           <menu>client-menu</menu>
         </action>
       </mousebind>
-      -->
     </context>
     <context name="Top">
       <mousebind button="Left" action="Drag">
@@ -693,7 +694,6 @@
           <edge>bottom</edge>
         </action>
       </mousebind>
-      <!--
       <mousebind button="Right" action="Press">
         <action name="Focus"/>
         <action name="Raise"/>
@@ -701,7 +701,6 @@
           <menu>client-menu</menu>
         </action>
       </mousebind>
-      -->
     </context>
     <context name="TRCorner BRCorner TLCorner BLCorner">
       <mousebind button="Left" action="Press">
@@ -728,7 +727,6 @@
       </mousebind>
     </context>
     <context name="Icon">
-      <!--
       <mousebind button="Left" action="Press">
         <action name="Focus"/>
         <action name="Raise"/>
@@ -737,8 +735,6 @@
           <menu>client-menu</menu>
         </action>
       </mousebind>
-      -->
-      <!--
       <mousebind button="Right" action="Press">
         <action name="Focus"/>
         <action name="Raise"/>
@@ -746,7 +742,6 @@
           <menu>client-menu</menu>
         </action>
       </mousebind>
-      -->
     </context>
     <context name="AllDesktops">
       <mousebind button="Left" action="Press">
@@ -1014,5 +1009,12 @@
 
   # end of the example
 -->
+    <application name="gmrun">
+      <position>
+        <x>center</x>
+        <y>center</y>
+        <monitor>mouse</monitor>
+      </position>
+    </application>
   </applications>
 </openbox_config>
