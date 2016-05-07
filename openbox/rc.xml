@@ -184,11 +184,17 @@
         <to>left</to>
         <wrap>yes</wrap>
       </action>
+      <action name="Execute">
+        <command>fehbg.sh</command>
+      </action>
     </keybind>
     <keybind key="C-A-Right">
       <action name="GoToDesktop">
         <to>right</to>
         <wrap>yes</wrap>
+      </action>
+      <action name="Execute">
+        <command>fehbg.sh</command>
       </action>
     </keybind>
     <keybind key="C-A-Up">
@@ -196,11 +202,17 @@
         <to>up</to>
         <wrap>yes</wrap>
       </action>
+      <action name="Execute">
+        <command>fehbg.sh</command>
+      </action>
     </keybind>
     <keybind key="C-A-Down">
       <action name="GoToDesktop">
         <to>down</to>
         <wrap>yes</wrap>
+      </action>
+      <action name="Execute">
+        <command>fehbg.sh</command>
       </action>
     </keybind>
     <keybind key="C-W-A-Left">
@@ -251,7 +263,7 @@
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="C-w">
+    <keybind key="C-S-w">
       <action name="Close"/>
     </keybind>
     <keybind key="A-Escape">
@@ -321,7 +333,7 @@
     <!-- application shortcuts -->
     <keybind key="W-Escape">
       <action name="Execute">
-        <command>autorandr.sh</command>
+        <command>auto-randr.sh</command>
       </action>
     </keybind>
     <keybind key="C-A-BackSpace">
@@ -546,11 +558,15 @@
     <keybind key="C-space">
       <action name="MoveResizeTo">
         <monitor>prev</monitor>
+        <x>center</x>
+        <y>center</y>
       </action>
     </keybind>
     <keybind key="C-S-space">
       <action name="MoveResizeTo">
         <monitor>next</monitor>
+        <x>center</x>
+        <y>center</y>
       </action>
     </keybind>
     <keybind key="W-b">
@@ -1040,6 +1056,18 @@
       </position>
     </application>
     <application name="*firefox*">
+      <position>
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
+    <application name="*blueman*">
+      <position>
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
+    <application name="*keepassx*">
       <position>
         <x>center</x>
         <y>center</y>

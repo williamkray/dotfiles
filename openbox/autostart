@@ -1,10 +1,10 @@
-feh --bg-max --randomize --no-fehbg --bg-fill --no-xinerama ~/ownCloud/Wallpapers/geometric/*
+auto-randr.sh
 obsetlayout 0 2 2 0
 xfce4-volumed &
 compton --config /dev/null -b
 xfce4-panel &
+cbatticon -x "batstat.sh" -l 10 -r 5 -c "notify-desktop \"Battery Level CRITICAL\!\"" &
 netmon &
 pasystray &
 blueman-applet &
 keepassx ~/ownCloud/Secure/weck.kdbx &
-autorandr.sh &
