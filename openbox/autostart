@@ -3,7 +3,7 @@ obsetlayout 0 2 2 0
 xfce4-volumed &
 compton --config /dev/null -b
 xfce4-panel &
-cbatticon -x "batstat.sh" -l 10 -r 5 -c "notify-desktop \"Battery Level CRITICAL\!\"" &
+cbatticon -l 10 -r 5 -c "notify-desktop \"Battery Level CRITICAL\!\"" &
 netmon &
 pasystray &
 blueman-applet &
