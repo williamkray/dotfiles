@@ -378,7 +378,7 @@
       </action>
     </keybind>
     <!-- expose picker -->
-    <keybind key="C-Up">
+    <keybind key="C-A-e">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -443,6 +443,11 @@
     <keybind key="W-d">
       <action name="Execute">
         <command>globalmediakeys.sh next</command>
+      </action>
+    </keybind>
+    <keybind key="W-i">
+      <action name="Execute">
+        <command>cmus-info</command>
       </action>
     </keybind>
     <!-- lock screen -->
