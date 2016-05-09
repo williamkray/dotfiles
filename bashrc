@@ -23,6 +23,7 @@ alias hosts="sudo vim /etc/hosts"
 #alias pacaur="pacaur --domain aur4.archlinux.org"
 alias notes="vim ~/Notes/00_quick.txt"
 alias time="vim ~/CorpInfo/time/$(date +%Y%m%d).txt"
+alias slock="slock -c \"#8c9440\" -d"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

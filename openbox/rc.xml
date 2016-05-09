@@ -453,7 +453,7 @@
     <!-- lock screen -->
     <keybind key="W-l">
       <action name="Execute">
-        <command>slock -dc "#8C9440"</command>
+        <command>myslock.sh</command>
       </action>
     </keybind>
     <!-- vim -->
@@ -1108,7 +1108,12 @@
       <position>
         <x>center</x>
         <y>center</y>
-        <monitor>mouse</monitor>
+      </position>
+    </application>
+    <application name="pavucontrol">
+      <position>
+        <x>center</x>
+        <y>center</y>
       </position>
     </application>
   </applications>
