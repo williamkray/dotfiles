@@ -24,6 +24,7 @@ alias hosts="sudo vim /etc/hosts"
 alias notes="vim ~/Notes/00_quick.txt"
 alias time="vim ~/CorpInfo/time/$(date +%Y%m%d).txt"
 alias slock="slock -c \"#8c9440\" -d"
+alias stagent="eval \"$(ssh-agent -s)\""
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
