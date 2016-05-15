@@ -1,0 +1,20 @@
+! zenburn
+
+#define bg    #383838
+#define fg    #DCDCCC
+#define blk   #383838
+#define bblk  #3F3F3F
+#define red   #CC9393
+#define bred  #DCA3A3
+#define grn   #7F9F7F
+#define bgrn  #8FB28F
+#define ylw   #D0BF8F
+#define bylw  #E0CF9F
+#define blu   #DFAF8F
+#define bblu  #F0DFAF
+#define mag   #9C6363
+#define bmag  #AC7373
+#define cyn   #8CD0D3
+#define bcyn  #93E0E3
+#define wht   #DCDCCC
+#define bwht  #FFFFEF
