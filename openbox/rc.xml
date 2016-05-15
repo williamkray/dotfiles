@@ -868,6 +868,7 @@
       </mousebind>
     </context>
     <context name="Desktop">
+      <!--
       <mousebind button="Up" action="Click">
         <action name="GoToDesktop">
           <to>previous</to>
@@ -898,6 +899,7 @@
           <to>next</to>
         </action>
       </mousebind>
+      -->
       <mousebind button="Left" action="Press">
         <action name="Focus"/>
         <action name="Raise"/>
@@ -1109,6 +1111,9 @@
         <x>center</x>
         <y>center</y>
       </position>
+    </application>
+    <application name="franz">
+      <desktop>all</desktop>
     </application>
     <application name="pavucontrol">
       <position>
