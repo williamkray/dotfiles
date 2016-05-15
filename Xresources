@@ -51,7 +51,7 @@ urxvt.keysym.Shift-Control-bar: string:\001%
 urxvt.keysym.Control-underscore: string:\001"
 
 ! use colors from a color file
-#include </home/william/Projects/dotfiles/colors/hybrid>
+#include </home/william/Projects/dotfiles/colors/scag>
 ! Colors
 *background:   bg
 *foreground:   fg

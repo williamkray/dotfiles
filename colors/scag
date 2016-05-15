@@ -6,9 +6,16 @@
 #define blk    #1f1d21
 #define bblk   #413f43
 #define red    #93503e 
+#define bred   #B7644D
 #define ylw    #9d8554
+#define bylw   #CEAE6E
 #define grn    #7a8648
+#define bgrn   #9EAE5D
 #define blu    #5f656a
+#define bblu   #8d959d
 #define mag    #7b6064
+#define bmag   #ae888d
 #define cyn    #566e6b
+#define bcyn   #799b96
 #define wht    #c4bbb0
+#define bwht   #f4e9db
