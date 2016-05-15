@@ -50,54 +50,26 @@ urxvt.keysym.Shift-Control-Z: string:\001z
 urxvt.keysym.Shift-Control-bar: string:\001%
 urxvt.keysym.Control-underscore: string:\001"
 
-!!zenburn colorscheme
-!*.cursorColor: #DCDCCC
-!*.background:  #383838
-!*.foreground:  #DCDCCC
-!*.color0: #383838
-!*.color1: #CC9393
-!*.color2: #7F9F7F
-!*.color3: #D0BF8F
-!*.color4: #DFAF8F
-!*.color5: #9C6363
-!*.color6: #8CD0D3
-!*.color7: #DCDCCC
-!*.color8: #3F3F3F
-!*.color9: #DCA3A3
-!*.color10: #8FB28F
-!*.color11: #E0CF9F
-!*.color12: #F0DFAF
-!*.color13: #AC7373
-!*.color14: #93E0E3
-!*.color15: #FFFFEF
+! use colors from a color file
+#include </home/william/Projects/dotfiles/colors/hybrid>
+! Colors
+*background:   bg
+*foreground:   fg
+*cursorColor:  wht
 
-! Hybrid Terminal Colours. Uses the palette from Tomorrow-Night:
-! https://github.com/chriskempson/tomorrow-theme/blob/master/vim/colors/Tomorrow-Night.vim
-! vim: ft=xdefaults
-
-*background: #1D1F21
-*foreground: #C5C8C6
-! black
-*color0: #282A2E
-*color8: #373B41
-! red
-*color1: #A54242
-*color9: #CC6666
-! green
-*color2: #8C9440
-*color10: #B5BD68
-! yellow
-*color3: #DE935F
-*color11: #F0C674
-! blue
-*color4: #5F819D
-*color12: #81A2BE
-! magenta
-*color5: #85678F
-*color13: #B294BB
-! cyan
-*color6: #5E8D87
-*color14: #8ABEB7
-! white
-*color7: #707880
-*color15: #C5C8C6
+*color0:      blk
+*color8:      bblk
+*color1:      red
+*color9:      bred
+*color2:      grn
+*color10:     bgrn
+*color3:      ylw
+*color11:     bylw
+*color4:      blu
+*color12:     bblu
+*color5:      mag
+*color13:     bmag
+*color6:      cyn
+*color14:     bcyn
+*color7:      wht
+*color15:     bwht
