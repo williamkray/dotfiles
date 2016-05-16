@@ -587,6 +587,7 @@
       </action>
     </keybind>
     <keybind key="C-space">
+      <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <monitor>prev</monitor>
         <x>center</x>
@@ -594,6 +595,7 @@
       </action>
     </keybind>
     <keybind key="C-S-space">
+      <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <monitor>next</monitor>
         <x>center</x>
