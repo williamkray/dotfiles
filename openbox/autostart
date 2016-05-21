@@ -8,4 +8,4 @@ cbatticon -l 10 -r 5 -c "notify-desktop \"Battery Level CRITICAL\!\"" &
 netmon &
 pasystray &
 blueman-applet &
-keepassx ~/ownCloud/Secure/weck.kdbx &
+keepassx &
