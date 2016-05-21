@@ -377,6 +377,15 @@
         <command>chrome-launcher.sh</command>
       </action>
     </keybind>
+    <keybind key="W-q">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>qutebrowser</name>
+        </startupnotify>
+        <command>qutebrowser</command>
+      </action>
+    </keybind>
     <!-- expose picker -->
     <keybind key="C-A-e">
       <action name="Execute">
