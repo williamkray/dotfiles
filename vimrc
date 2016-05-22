@@ -2,7 +2,10 @@
 syntax enable
 
 " line numbers on
-set nu
+set number
+
+"relative line numbers
+set relativenumber
 
 " mouse support enabled
 set mouse=a
@@ -71,3 +74,13 @@ set hidden
 if &term =~ '256color'
   set t_ut=
 endif
+
+" Make Y yank everything from the cursor to the end of the line. This makes Y
+" act more like C or D because by default, Y yanks the current line (i.e. the
+" same as yy).
+noremap Y y$
+
+" remap j/k to gj/gk respectively to move up and down properly
+" on word-wrapped lines. if there is no count, use j/k normally
+noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
