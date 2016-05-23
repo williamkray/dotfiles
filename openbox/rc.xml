@@ -417,12 +417,13 @@
       </action>
     </keybind>
     <!-- app launcher -->
+    <!--
     <keybind key="W-space">
       <action name="Execute">
         <command>xfce4-popup-whiskermenu</command>
       </action>
     </keybind>
-    <!-- app launcher -->
+    -->
     <keybind key="A-space">
       <action name="Execute">
         <command>gmrun</command>
