@@ -1,11 +1,12 @@
 unclutter &
-xfce4-panel &
+#xfce4-panel &
 auto-randr.sh
 obsetlayout 0 2 2 0
 xfce4-volumed &
-compton --config /dev/null -b
-cbatticon -l 10 -r 5 -c "notify-desktop \"Battery Level CRITICAL\!\"" &
-netmon &
-pasystray &
-blueman-applet &
+#compton --config /dev/null -b
+#cbatticon -l 10 -r 5 -c "notify-desktop \"Battery Level CRITICAL\!\"" &
+#netmon &
+#pasystray &
+conky
+#blueman-applet &
 keepassx &
