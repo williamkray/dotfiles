@@ -11,3 +11,4 @@ conky -c ~/Projects/dotfiles/conky.conf
 conky -c ~/Projects/dotfiles/conky-music.conf
 #blueman-applet &
 keepassx &
+redshift &
