@@ -387,7 +387,7 @@
       </action>
     </keybind>
     <!-- expose picker -->
-    <keybind key="C-A-e">
+    <keybind key="C-S-e">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -437,6 +437,16 @@
           <name>pavucontrol</name>
         </startupnotify>
         <command>pavucontrol</command>
+      </action>
+    </keybind>
+    <!-- bluetooth menu -->
+    <keybind key="W-b">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>blueman-manager</name>
+        </startupnotify>
+        <command>blueman-manager</command>
       </action>
     </keybind>
     <!-- music/media control -->
@@ -612,9 +622,11 @@
         <y>center</y>
       </action>
     </keybind>
+    <!--
     <keybind key="W-b">
       <action name="ToggleDecorations"/>
     </keybind>
+    -->
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
