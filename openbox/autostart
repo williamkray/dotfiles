@@ -1,14 +1,9 @@
-unclutter &
-#xfce4-panel &
-auto-randr.sh
+auto-randr.sh &
 obsetlayout 0 2 2 0
 xfce4-volumed &
-#compton --config /dev/null -b
-#cbatticon -l 10 -r 5 -c "notify-desktop \"Battery Level CRITICAL\!\"" &
-#netmon &
-#pasystray &
-conky -c ~/Projects/dotfiles/conky.conf
-conky -c ~/Projects/dotfiles/conky-music.conf
-#blueman-applet &
-keepassx &
+keepassx2 &
 redshift &
+unclutter &
+blueman-applet &
+sleep 10 && conky -c ~/Projects/dotfiles/conky.conf
+sleep 10 && conky -c ~/Projects/dotfiles/conky-music.conf
