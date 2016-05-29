@@ -1,3 +1,6 @@
+" pathogen runtime path management
+execute pathogen#infect()
+
 " syntax highlighting
 syntax enable
 
@@ -84,3 +87,6 @@ noremap Y y$
 " on word-wrapped lines. if there is no count, use j/k normally
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+
+" explorer mode shows file structure
+let g:netrw_liststyle=3
