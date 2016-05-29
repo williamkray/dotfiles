@@ -25,6 +25,7 @@ alias notes="vim ~/Notes/00_quick.txt"
 alias time="vim ~/CorpInfo/time/$(date +%Y%m%d).txt"
 alias slock="slock -c \"#8c9440\" -d"
 alias stagent="eval \"$(ssh-agent -s)\""
+alias xdg-open='XDG_CURRENT_DESKTOP="GNOME" /usr/bin/xdg-open'
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
