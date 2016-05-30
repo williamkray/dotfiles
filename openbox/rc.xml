@@ -3,7 +3,7 @@
         Copy the file to $HOME/.config/openbox/ instead. -->
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
-    <strength>10</strength>
+    <strength>20</strength>
     <screen_edge_strength>20</screen_edge_strength>
   </resistance>
   <focus>
@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>oomox-numix-puke-light</name>
+    <name>oomox-numix-puke</name>
     <titleLayout>DLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -55,7 +55,7 @@
       D: omnipresent (on all desktops).
   -->
     <keepBorder>yes</keepBorder>
-    <animateIconify>yes</animateIconify>
+    <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>DejaVu Sans Semi-Condensed</name>
       <size>10</size>
