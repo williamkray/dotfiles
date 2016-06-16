@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>oomox-numix-puke</name>
+    <name>oomox-numix-puke-light</name>
     <titleLayout>DLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -54,7 +54,7 @@
       S: shade (roll up/down)
       D: omnipresent (on all desktops).
   -->
-    <keepBorder>no</keepBorder>
+    <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>DejaVu Sans Semi-Condensed</name>
@@ -204,6 +204,16 @@
       </action>
       <action name="Execute">
         <command>fehbg.sh</command>
+      </action>
+    </keybind>
+    <keybind key="C-S-f">
+      <action name="Execute">
+        <command>~/.scripts/flip.sh</command>
+      </action>
+    </keybind>
+    <keybind key="C-S-g">
+      <action name="Execute">
+        <command>~/.scripts/glare.sh</command>
       </action>
     </keybind>
     <keybind key="C-A-Down">
