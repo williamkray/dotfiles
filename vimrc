@@ -90,3 +90,9 @@ noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
 " explorer mode shows file structure
 let g:netrw_liststyle=3
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
+" powerline fonts in airline
+let g:airline_powerline_fonts = 1
