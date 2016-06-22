@@ -96,3 +96,6 @@ cmap w!! w !sudo tee > /dev/null %
 
 " powerline fonts in airline
 let g:airline_powerline_fonts = 1
+
+" vim-airline wants this to actually display something by default
+set laststatus=2
