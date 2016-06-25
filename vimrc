@@ -99,3 +99,6 @@ let g:airline_powerline_fonts = 1
 
 " vim-airline wants this to actually display something by default
 set laststatus=2
+
+" large file size
+let g:LargeFile=10
