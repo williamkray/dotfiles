@@ -52,8 +52,8 @@ set foldlevelstart=20
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 vnoremap <Space> zf
 
-" i hope this works
-nnoremap <C-j> :!dometa.sh % <CR>
+" open file explorer
+nnoremap <C-j> :Explore<CR>
 
 " renames tmux window to name of file open
 autocmd BufReadPost,FileReadPost,BufNewFile,BufEnter * call system("tmux rename-window " . expand("%:t"))
