@@ -57,7 +57,7 @@ nnoremap <C-j> :!dometa.sh % <CR>
 
 " renames tmux window to name of file open
 autocmd BufReadPost,FileReadPost,BufNewFile,BufEnter * call system("tmux rename-window " . expand("%:t"))
-"autocmd VimLeave * call system("tmux set automatic-rename on")
+autocmd VimLeave * call system("tmux set automatic-rename on")
 
 " searching for text
 set incsearch
