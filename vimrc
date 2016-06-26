@@ -57,7 +57,7 @@ nnoremap <C-j> :!dometa.sh % <CR>
 
 " renames tmux window to name of file open
 autocmd BufReadPost,FileReadPost,BufNewFile,BufEnter * call system("tmux rename-window " . expand("%:t"))
-autocmd VimLeave * call system("tmux set automatic-rename on")
+"autocmd VimLeave * call system("tmux set automatic-rename on")
 
 " searching for text
 set incsearch
@@ -99,6 +99,11 @@ let g:airline_powerline_fonts = 1
 
 " vim-airline wants this to actually display something by default
 set laststatus=2
+" vim-airline buffer tabs
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " large file size
 let g:LargeFile=10
