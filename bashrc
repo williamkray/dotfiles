@@ -6,9 +6,12 @@
 
 . ~/.scripts/git-prompt.sh
 . ~/.scripts/git-completion.bash
+. ~/.secret/2fa/secrets
+
 alias ls='ls --color=auto'
 #PS1='[\u@\h \W]\$ '
-PROMPT_COMMAND="__git_ps1 \[\"\u@\h \w\"]\\\n\$'\u21B3' \ \\\$\ "
+#PROMPT_COMMAND="__git_ps1 \[\"\u@\h \w\"]\\\n\$'\u21B3' \ \\\$\ "
+PROMPT_COMMAND="__git_ps1 \[\\\W\] \ $'\u25B6'\ "
 
 export PATH=$PATH:/home/william/.scripts:/home/william/.gem/ruby/2.1.0/bin:/opt/android-sdk/platform-tools:/home/william/.gem/ruby/2.2.0/bin
 #export TERM=xterm-256color
@@ -26,6 +29,7 @@ alias time="vim ~/CorpInfo/time/$(date +%Y%m%d).txt"
 alias slock="slock -c \"#8c9440\" -d"
 alias stagent="eval \"$(ssh-agent -s)\""
 alias xdg-open='XDG_CURRENT_DESKTOP="GNOME" /usr/bin/xdg-open'
+alias bbstagent="eval \"$(ssh-agent -s)\" && ssh-add ~/Work/projects/beachbody/keys/*"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
