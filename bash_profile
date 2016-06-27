@@ -4,7 +4,7 @@
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 ## handle some file-opener issues with mimetypes
-. ~/.scripts/xdg-gvfs-open.sh
+#. ~/.scripts/xdg-gvfs-open.sh
 
 export EDITOR=vim
 export BROWSER=qtb-launcher.sh
