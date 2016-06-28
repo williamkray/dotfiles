@@ -30,6 +30,7 @@ alias slock="slock -c \"#8c9440\" -d"
 alias stagent="eval \"$(ssh-agent -s)\""
 alias xdg-open='XDG_CURRENT_DESKTOP="GNOME" /usr/bin/xdg-open'
 alias bbstagent="eval \"$(ssh-agent -s)\" && ssh-add ~/Work/projects/beachbody/keys/*"
+alias bbokta="otp.sh $bb && ~/Work/projects/beachbody/Okta/get-aws-keys.py -p digiprod"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
