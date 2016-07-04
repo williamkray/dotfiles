@@ -6,6 +6,6 @@ keepassx2 &
 redshift &
 unclutter &
 blueman-applet &
-compton -D 2 --inactive-dim .3 --vsync opengl-mswc &
+compton -D 2 --inactive-dim .3 --vsync opengl-swc &
 sleep 10 && conky -c ~/Projects/dotfiles/conky.conf
 sleep 10 && conky -c ~/Projects/dotfiles/conky-music.conf
