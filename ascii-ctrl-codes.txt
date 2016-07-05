@@ -1,0 +1,45 @@
+This list shows control keys as defined by the ASCII table
+for reference in other places. For example, the ESC key can be 
+synthesized with its octal representation, \033, or its control-key
+combination of ^[.
+
+A more direct example of using this list for reference is finding
+the ctrl+A and return keys (\001 and \015) for use in my Xresources
+file to pass special key commands to tmux.
+
+printable ASCII characters are not included because they are generally
+easier to find and decipher from an ASCII table on the web.
+
+Char	Oct	Dec	Hex	Control-Key	Control Action
+NUL	  000	  0	  0	  ^@	  NULl character
+SOH	  001	  1	  1	  ^A	  Start Of Heading
+STX	  002	  2	  2	  ^B	  Start of TeXt
+ETX	  003	  3	  3	  ^C	  End of TeXt
+EOT	  004	  4	  4	  ^D	  End Of Transmission
+ENQ	  005	  5	  5	  ^E	  ENQuiry
+ACK	  006	  6	  6	  ^F	  ACKnowledge
+BEL	  007	  7	  7	  ^G	  BELl, rings terminal bell
+BS	  010	  8	  8	  ^H	  BackSpace (non-destructive)
+HT	  011	  9	  9	  ^I	  Horizontal Tab (move to next tab position)
+LF	  012	 10	  a	  ^J	  Line Feed
+VT	  013	 11	  b	  ^K	  Vertical Tab
+FF	  014	 12	  c	  ^L	  Form Feed
+CR	  015	 13	  d	  ^M	  Carriage Return
+SO	  016	 14	  e	  ^N	  Shift Out
+SI	  017	 15	  f	  ^O	  Shift In
+DLE	  020	 16	 10	  ^P	  Data Link Escape
+DC1	  021	 17	 11	  ^Q	  Device Control 1, normally XON
+DC2	  022	 18	 12	  ^R	  Device Control 2
+DC3	  023	 19	 13	  ^S	  Device Control 3, normally XOFF
+DC4	  024	 20	 14	  ^T	  Device Control 4
+NAK	  025	 21	 15	  ^U	  Negative AcKnowledge
+SYN	  026	 22	 16	  ^V	  SYNchronous idle
+ETB	  027	 23	 17	  ^W	  End Transmission Block
+CAN	  030	 24	 18	  ^X	  CANcel line
+EM	  031	 25	 19	  ^Y	  End of Medium
+SUB	  032	 26	 1a	  ^Z	  SUBstitute
+ESC	  033	 27	 1b	  ^[	  ESCape
+FS	  034	 28	 1c	  ^\	  File Separator
+GS	  035	 29	 1d	  ^]	  Group Separator
+RS	  036	 30	 1e	  ^^	  Record Separator
+US	  037	 31	 1f	  ^_	  Unit Separator
