@@ -23,9 +23,10 @@ URxvt.font-size.step: 1
 urxvt.keysym.Shift-Up: string:cd ..\n
 
 !keyboard shortcuts
+!require the use of ASCII octal codes:
 ! \001 is ctrl+A, my tmux prefix
 ! \015 is return
-! these keyboard shortcuts (tmux specific) dont work with tmux 2.1 for some reason
+!look up an ASCII table for more key codes
 urxvt.keysym.Shift-Control-W: string:\001d
 urxvt.keysym.Shift-Control-V: perl:clipboard:paste
 urxvt.keysym.Shift-Control-C: perl:clipboard:copy
@@ -52,8 +53,7 @@ urxvt.keysym.Shift-Control-Z: string:\001z
 
 !bind to split windows into panes with | and -
 urxvt.keysym.Shift-Control-bar: string:\001%
-! this one will always throw an error when running xrdb merge. safe to disregard.
-urxvt.keysym.Control-underscore: string:\001"
+urxvt.keysym.Control-underscore: string:\001\042
 
 ! use colors from a color file
 #include </home/william/Projects/dotfiles/colors/scag>
