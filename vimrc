@@ -119,3 +119,9 @@ let g:startify_custom_header = [
       \ ]
 
 let g:startify_session_persistence = 1
+
+" required for alphabetical incrementing with visual-increment plugin
+set nrformats=alpha
+" reverse plugin default keybindings
+vmap <C-X> <Plug>VisualIncrement
+vmap <C-A> <Plug>VisualDecrement
