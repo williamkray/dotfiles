@@ -346,6 +346,11 @@
         <command>auto-randr.sh</command>
       </action>
     </keybind>
+    <keybind key="W-1">
+      <action name="Execute">
+        <command>fehbg.sh</command>
+      </action>
+    </keybind>
     <keybind key="C-A-BackSpace">
       <action name="Execute">
         <command>systemctl suspend</command>
