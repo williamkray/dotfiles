@@ -125,3 +125,9 @@ set nrformats=alpha
 " reverse plugin default keybindings
 vmap <C-X> <Plug>VisualIncrement
 vmap <C-A> <Plug>VisualDecrement
+
+" vim_json hides quotes by default in json docs except on the line
+" that the cursor is on. this interferes with indentLine plugin,
+" so these commands enable unhiding quotes on entering insert mode.
+autocmd InsertEnter *.json setlocal concealcursor=
+autocmd InsertLeave *.json setlocal concealcursor=inc
