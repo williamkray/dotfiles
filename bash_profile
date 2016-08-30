@@ -13,6 +13,7 @@ export BUILDDIR="/tmp/pacaurtmp-$USER"
 export XDG_CACHE_HOME=/dev/shm
 export TMUX_MASTER="tmux-master"
 #export SDL_AUDIODRIVER=alsa
+complete -C '/usr/bin/aws_completer' aws
 
 #export SSH_ENV="$HOME/.ssh/environment"
 
