@@ -4,7 +4,9 @@ Xcursor.theme: Paper
 
 !general config
 urxvt.cursorBlink: 1
-URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select,resize-font
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select,resize-font,matcher
+URxvt.url-select.launcher: /home/william/.scripts/qtb-launcher.sh
+URxvt.matcher.button: 2
 URxvt.depth: 32
 URxvt.saveLines:0
 URxvt.scrollBar: false
@@ -56,7 +58,7 @@ urxvt.keysym.Shift-Control-bar: string:\001%
 urxvt.keysym.Control-underscore: string:\001\042
 
 ! use colors from a color file
-#include </home/william/Projects/dotfiles/colors/scag>
+#include </home/william/Projects/dotfiles/colors/hybrid>
 ! Colors
 *background:   bg
 *foreground:   fg
