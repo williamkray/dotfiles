@@ -387,9 +387,9 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>chrome-launcher</name>
+          <name>opera-launcher</name>
         </startupnotify>
-        <command>chrome-launcher.sh</command>
+        <command>opera-launcher.sh</command>
       </action>
     </keybind>
     <keybind key="W-q">
