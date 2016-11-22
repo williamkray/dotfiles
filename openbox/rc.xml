@@ -387,9 +387,9 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>opera-launcher</name>
+          <name>firefox-launcher</name>
         </startupnotify>
-        <command>opera-launcher.sh</command>
+        <command>firefox-launcher.sh</command>
       </action>
     </keybind>
     <keybind key="W-q">
@@ -1108,6 +1108,7 @@
       <decor>no</decor>
     </application>
     <application name="*rxvt">
+      <desktop>all</desktop>
       <position>
         <x>center</x>
         <y>center</y>
@@ -1138,6 +1139,7 @@
       </position>
     </application>
     <application name="*keepassx*">
+      <desktop>all</desktop>
       <position>
         <x>center</x>
         <y>center</y>
@@ -1153,6 +1155,13 @@
       <desktop>all</desktop>
     </application>
     <application name="pavucontrol">
+      <position>
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
+    <application name="evolution">
+      <desktop>2</desktop>
       <position>
         <x>center</x>
         <y>center</y>
