@@ -7,7 +7,7 @@
 #. ~/.scripts/xdg-gvfs-open.sh
 
 export EDITOR=vim
-export BROWSER=qtb-launcher.sh
+export BROWSER=firefox-launcher.sh
 ## some pacaur vars
 export BUILDDIR="/tmp/pacaurtmp-$USER"
 export XDG_CACHE_HOME=/dev/shm
