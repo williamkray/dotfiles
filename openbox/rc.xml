@@ -362,6 +362,7 @@
       </action>
     </keybind>
     <!-- screenshots -->
+    <!--
     <keybind key="W-p">
       <action name="Execute">
         <command>scrot -s ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png</command>
@@ -371,7 +372,7 @@
       <action name="Execute">
         <command>scrot ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png</command>
       </action>
-    </keybind>
+    </keybind> -->
     <keybind key="Print">
       <action name="Execute">
         <command>scrot -s ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png</command>
@@ -510,28 +511,28 @@
       </action>
     </keybind>
     <!-- volume control -->
-    <keybind key="W-minus">
+    <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
         <command>pulsectl.sh down</command>
       </action>
     </keybind>
-    <keybind key="W-equal">
+    <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
         <command>pulsectl.sh up</command>
       </action>
     </keybind>
-    <keybind key="W-0">
+    <keybind key="XF86AudioMute">
       <action name="Execute">
         <command>pulsectl.sh toggle</command>
       </action>
     </keybind>
     <!-- brightness control -->
-    <keybind key="W-comma">
+    <keybind key="XF86MonBrightnessDown">
       <action name="Execute">
         <command>min</command>
       </action>
     </keybind>
-    <keybind key="W-period">
+    <keybind key="XF86MonBrightnessUp">
       <action name="Execute">
         <command>max</command>
       </action>
