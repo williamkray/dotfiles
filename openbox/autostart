@@ -1,7 +1,7 @@
-fix-randr.sh 
+#fix-randr.sh 
 auto-randr.sh &
 obsetlayout 0 2 2 0
-xfce4-volumed &
+#xfce4-volumed &
 keepassx2 &
 redshift &
 unclutter &
