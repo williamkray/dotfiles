@@ -5,7 +5,7 @@ Xcursor.theme: Paper
 !general config
 urxvt.cursorBlink: 1
 URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select,resize-font,matcher
-URxvt.url-select.launcher: /home/william/.scripts/qtb-launcher.sh
+URxvt.url-select.launcher: /home/william/.scripts/firefox-launcher.sh
 URxvt.matcher.button: 2
 URxvt.depth: 32
 URxvt.saveLines:0
