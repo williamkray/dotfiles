@@ -341,9 +341,14 @@
     </keybind>
     <!-- Keybindings for running applications -->
     <!-- application shortcuts -->
-    <keybind key="W-Escape">
+    <keybind key="XF86Tools">
       <action name="Execute">
         <command>auto-randr.sh</command>
+      </action>
+    </keybind>
+    <keybind key="XF86Display">
+      <action name="Execute">
+        <command>arandr</command>
       </action>
     </keybind>
     <keybind key="W-1">
@@ -403,7 +408,7 @@
       </action>
     </keybind>
     <!-- expose picker -->
-    <keybind key="C-S-e">
+    <keybind key="XF86Explorer">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -433,9 +438,19 @@
       </action>
     </keybind>
     <!-- app launcher -->
+    <keybind key="XF86Search">
+      <action name="Execute">
+        <command>synapse</command>
+      </action>
+    </keybind>
     <keybind key="W-space">
       <action name="Execute">
         <command>synapse</command>
+      </action>
+    </keybind>
+    <keybind key="XF86LaunchA">
+      <action name="Execute">
+        <command>gmrun</command>
       </action>
     </keybind>
     <keybind key="A-space">
