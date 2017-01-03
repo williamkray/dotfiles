@@ -479,6 +479,21 @@
       </action>
     </keybind>
     <!-- music/media control -->
+    <keybind key="W-XF86AudioLowerVolume">
+      <action name="Execute">
+        <command>globalmediakeys.sh toggle</command>
+      </action>
+    </keybind>
+    <keybind key="W-XF86AudioMute">
+      <action name="Execute">
+        <command>globalmediakeys.sh prev</command>
+      </action>
+    </keybind>
+    <keybind key="W-XF86AudioRaiseVolume">
+      <action name="Execute">
+        <command>globalmediakeys.sh next</command>
+      </action>
+    </keybind>
     <keybind key="W-s">
       <action name="Execute">
         <command>globalmediakeys.sh toggle</command>
