@@ -7,6 +7,7 @@
 . ~/.scripts/git-prompt.sh
 . ~/.scripts/git-completion.bash
 . ~/.secret/2fa/secrets
+. ~/.scripts/pass.bash-completion
 
 alias ls='ls --color=auto'
 #PS1='[\u@\h \W]\$ '
@@ -33,6 +34,7 @@ alias bbstagent="eval \"$(ssh-agent -s)\" && ssh-add ~/Work/projects/beachbody/k
 alias bbokta="otp.sh $bb && ~/Work/projects/beachbody/Okta/get-aws-keys.py -p digiprod"
 alias bbjenkins="bbstagent && ssh ip-10-200-0-46"
 alias bbvpn="~/Work/projects/beachbody/bbstartvpn.exp"
+alias syncpass="pass git pull && pass git push"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
