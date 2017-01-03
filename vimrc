@@ -1,6 +1,9 @@
 " pathogen runtime path management
 execute pathogen#infect()
 
+" wildmenu for nicer looking tab completion
+set wildmenu
+
 " syntax highlighting
 syntax enable
 
@@ -25,6 +28,14 @@ set shiftwidth=2
 
 " consistent indentation based on above line
 set autoindent
+
+" Highlight tabs in red so they can be removed!
+highlight Tabs ctermbg=red guibg=red
+match Tabs /\t/
+
+" Highlight traling spaces in blue so they can be removed!
+highlight TrailingSpace ctermbg=blue guibg=blue
+2match TrailingSpace /\s\+$/
 
 " quick cycle through buffers
 :nnoremap <C-m> :bnext<CR>
