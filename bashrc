@@ -9,6 +9,10 @@
 . ~/.secret/2fa/secrets
 . ~/.scripts/pass.bash-completion
 
+export PASSWORD_STORE_GENERATED_LENGTH=16
+export PASSWORD_STORE_ENABLE_EXTENSIONS=true
+export PASSWORD_STORE_EXTENSIONS_DIR=$HOME/Projects/password-store-extensions
+
 alias ls='ls --color=auto'
 #PS1='[\u@\h \W]\$ '
 #PROMPT_COMMAND="__git_ps1 \[\"\u@\h \w\"]\\\n\$'\u21B3' \ \\\$\ "
