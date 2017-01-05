@@ -540,6 +540,25 @@
         <command>urxvt -e auto-tmux.sh cmus</command>
       </action>
     </keybind>
+    <!-- pass auto-fill -->
+    <keybind key="W-o">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>false</enabled>
+          <name>cmus</name>
+        </startupnotify>
+        <command>pass-autofill.sh o</command>
+      </action>
+    </keybind>
+    <keybind key="W-y">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>false</enabled>
+          <name>cmus</name>
+        </startupnotify>
+        <command>pass-autofill.sh a</command>
+      </action>
+    </keybind>
     <!-- volume control -->
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
