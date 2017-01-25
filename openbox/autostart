@@ -2,7 +2,7 @@
 auto-randr.sh &
 obsetlayout 0 2 2 0
 #xfce4-volumed &
-keepassx2 &
+#keepassx2 &
 redshift &
 unclutter &
 blueman-applet &
