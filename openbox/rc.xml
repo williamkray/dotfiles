@@ -544,8 +544,8 @@
     <keybind key="W-o">
       <action name="Execute">
         <startupnotify>
-          <enabled>false</enabled>
-          <name>cmus</name>
+          <enabled>true</enabled>
+          <name>autofill</name>
         </startupnotify>
         <command>pass-autofill.sh o</command>
       </action>
@@ -554,7 +554,7 @@
       <action name="Execute">
         <startupnotify>
           <enabled>false</enabled>
-          <name>cmus</name>
+          <name>autofill</name>
         </startupnotify>
         <command>pass-autofill.sh a</command>
       </action>
@@ -1211,7 +1211,7 @@
       </position>
     </application>
     <application name="evolution">
-      <desktop>2</desktop>
+      <!-- <desktop>2</desktop> -->
       <position>
         <x>center</x>
         <y>center</y>
