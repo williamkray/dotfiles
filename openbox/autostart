@@ -5,6 +5,7 @@ obsetlayout 0 2 2 0
 #keepassx2 &
 redshift &
 unclutter &
+indicator-kdeconnect &
 blueman-applet &
 compton -D 2 --inactive-dim .3 --vsync opengl-swc --backend glx --paint-on-overlay --glx-no-stencil --glx-no-rebind-pixmap -b
 sleep 10 && conky -c ~/Projects/dotfiles/conky.conf
