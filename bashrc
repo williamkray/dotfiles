@@ -14,10 +14,6 @@ if [ -f ~/.bash_aliases ]; then
   source ~/.bash_aliases
 fi
 
-## sets our aws default profile
-## function defined in aws-prompt.sh
-export -f setaws
-
 ## set a special prompt icon (arrow)
 ## this makes it easy to change the character
 prompticon() {
