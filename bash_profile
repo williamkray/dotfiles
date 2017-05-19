@@ -10,6 +10,7 @@ export EDITOR=vim
 export BROWSER=firefox-launcher.sh
 ## some pacaur vars
 export BUILDDIR="/tmp/pacaurtmp-$USER"
+export PKGDEST="$HOME/Build/built"
 export XDG_CACHE_HOME=/dev/shm
 export TMUX_MASTER="tmux-master"
 complete -C '/usr/bin/aws_completer' aws
