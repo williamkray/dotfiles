@@ -496,7 +496,11 @@
     </keybind>
     <keybind key="W-s">
       <action name="Execute">
-        <command>globalmediakeys.sh toggle</command>
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>slack</name>
+        </startupnotify>
+        <command>slack</command>
       </action>
     </keybind>
     <keybind key="W-a">
@@ -1218,6 +1222,13 @@
       </position>
     </application>
     <application name="qutebrowser">
+      <position>
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
+    <application name="slack">
+      <desktop>all</desktop>
       <position>
         <x>center</x>
         <y>center</y>
