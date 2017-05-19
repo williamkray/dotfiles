@@ -36,16 +36,16 @@ urxvt.keysym.Shift-Control-C: perl:clipboard:copy
 urxvt.keysym.Shift-Control-R: string:rs_tag -a 'rs_agent_dev:download_cookbooks_once=true'\n
 
 !bind control-shift-arrows to move between panes in tmux
-urxvt.keysym.Shift-Control-Up: string:\001:select-pane -U\015
-urxvt.keysym.Shift-Control-Down: string:\001:select-pane -D\015
-urxvt.keysym.Shift-Control-Left: string:\001:select-pane -L\015
-urxvt.keysym.Shift-Control-Right: string:\001:select-pane -R\015
+urxvt.keysym.Shift-Control-Up: string:\001\013
+urxvt.keysym.Shift-Control-Down: string:\001\012
+urxvt.keysym.Shift-Control-Left: string:\001\010
+urxvt.keysym.Shift-Control-Right: string:\001\014
 
 !bind alt-arrows to resize panes in tmux
-urxvt.keysym.Meta-Up: string:\001:resize-pane -U\015
-urxvt.keysym.Meta-Down: string:\001:resize-pane -D\015
-urxvt.keysym.Meta-Left: string:\001:resize-pane -L\015
-urxvt.keysym.Meta-Right: string:\001:resize-pane -R\015
+urxvt.keysym.Meta-Up: string:\001\005
+urxvt.keysym.Meta-Down: string:\001\027
+urxvt.keysym.Meta-Left: string:\001\021
+urxvt.keysym.Meta-Right: string:\001\022
 
 ! change tmux windows
 urxvt.keysym.Shift-Control-Prior: string:\001p
