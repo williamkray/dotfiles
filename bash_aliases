@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 alias ls='ls --color=auto'
-alias home="ssh -X -C -L 5901:localhost:5901 -L 5902:localhost:5900 -L 3389:localhost:3389 kray"
+alias home="ssh -X -C -D 8118 -L 5901:localhost:5901 -L 5902:localhost:5900 -L 3389:localhost:3389 kray"
 alias vpn="/home/william/.scripts/vpn.sh"
 alias tmux="/usr/bin/tmux -2"
 alias wow="git status"
