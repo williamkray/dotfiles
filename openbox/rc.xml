@@ -366,18 +366,11 @@
         <prompt>no</prompt>
       </action>
     </keybind>
-    <!-- screenshots -->
-    <!--
     <keybind key="W-p">
       <action name="Execute">
-        <command>scrot -s ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png</command>
+        <command>vpn.sh start</command>
       </action>
     </keybind>
-    <keybind key="W-A-p">
-      <action name="Execute">
-        <command>scrot ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png</command>
-      </action>
-    </keybind> -->
     <keybind key="Print">
       <action name="Execute">
         <command>scrot -s ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png</command>
