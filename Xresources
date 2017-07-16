@@ -12,6 +12,7 @@ URxvt.saveLines:0
 URxvt.scrollBar: false
 URxvt.iconFile:/usr/share/icons/Paper/32x32/apps/terminal.png
 URxvt.lineSpace: 1
+URxvt.letterspace: -2
 urxvt.font: xft:DejaVu Sans Mono for Powerline:size=10
 !Disables the insanely annoying Ctrl+Shift shortcut that enters ISO14755 mode
 URxvt.iso14755: False
