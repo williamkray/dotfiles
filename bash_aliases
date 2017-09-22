@@ -11,7 +11,6 @@ alias very="git"
 alias such="git"
 alias hosts="sudo vim /etc/hosts"
 alias notes="vim ~/Notes/00_quick.txt"
-alias dongers="$BROWSER ~/Notes/dongers.txt"
 alias slock="slock -c \"#8c9440\" -d"
 alias stagent="eval \"$(ssh-agent -s)\""
 alias xdg-open='XDG_CURRENT_DESKTOP="GNOME" /usr/bin/xdg-open'
