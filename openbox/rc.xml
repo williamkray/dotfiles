@@ -208,12 +208,12 @@
     </keybind>
     <keybind key="C-S-f">
       <action name="Execute">
-        <command>~/.scripts/flip.sh</command>
+        <command>~/.scripts/donger.sh flip</command>
       </action>
     </keybind>
     <keybind key="C-S-g">
       <action name="Execute">
-        <command>~/.scripts/glare.sh</command>
+        <command>~/.scripts/donger.sh glare</command>
       </action>
     </keybind>
     <keybind key="C-A-Down">
