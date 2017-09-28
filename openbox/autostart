@@ -1,8 +1,7 @@
-#fix-randr.sh 
 auto-randr.sh &
+stalonetray -t --dockapp-mode &
 obsetlayout 0 2 2 0
 #xfce4-volumed &
-#keepassx2 &
 redshift &
 unclutter &
 indicator-kdeconnect &
