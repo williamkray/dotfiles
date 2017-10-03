@@ -1,5 +1,5 @@
 auto-randr.sh &
-stalonetray -t --dockapp-mode &
+stalonetray -t -f3 --dockapp-mode &
 obsetlayout 0 2 2 0
 #xfce4-volumed &
 redshift &
