@@ -373,12 +373,12 @@
     </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>scrot -s ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png</command>
+        <command>escrotum -s ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png</command>
       </action>
     </keybind>
     <keybind key="A-Print">
       <action name="Execute">
-        <command>scrot ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png</command>
+        <command>escrotum ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png</command>
       </action>
     </keybind>
     <!-- browser -->
