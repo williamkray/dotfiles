@@ -21,4 +21,5 @@ alias bbjenkins="bbstagent && ssh ip-10-200-0-46"
 alias bbvpn="~/Work/projects/beachbody/bbstartvpn.exp"
 alias gitconfci="git config user.name 'William Kray' && git config user.email wkray@corpinfo.com"
 alias gitconfwk="git config user.name 'William Kray' && git config user.email william@kray.pw"
+alias netrestart="sudo systemctl restart netctl-auto@wlp4s0"
 
