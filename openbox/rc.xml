@@ -514,7 +514,8 @@
     <!-- lock screen -->
     <keybind key="W-l">
       <action name="Execute">
-        <command>myslock.sh</command>
+        <!--<command>myslock.sh</command>-->
+        <command>xautolock -locknow</command>
       </action>
     </keybind>
     <!-- vim -->
