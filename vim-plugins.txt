@@ -1,0 +1,14 @@
+The following is a list of the vim plugins that my vim config depends on.
+Hunt these down on github, and clone them into the directory `~/.vim/bundle/`.
+As long as you have the file `~/.vim/autoload/pathogen.vim` in place,
+the plugins will be loaded by the vimrc automatically.
+
+ctrlp.vim
+indentLine
+LargeFile
+vim-airline
+vim-airline-themes
+vim-fugitive
+vim-json
+vim-startify
+vim-visual-increment
