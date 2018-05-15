@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>oomox-numix-puke-light</name>
+    <name>oomox-beowulf</name>
     <titleLayout>DLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -54,7 +54,7 @@
       S: shade (roll up/down)
       D: omnipresent (on all desktops).
   -->
-    <keepBorder>yes</keepBorder>
+    <keepBorder>no</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>DejaVu Sans Semi-Condensed</name>
@@ -373,12 +373,12 @@
     </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>escrotum -s ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png</command>
+        <command>escrotum -C -s /tmp/Screenshot_%Y-%m-%d_%H-%M-%S.png</command>
       </action>
     </keybind>
     <keybind key="A-Print">
       <action name="Execute">
-        <command>escrotum ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png</command>
+        <command>escrotum -C /tmp/Screenshot_%Y-%m-%d_%H-%M-%S.png</command>
       </action>
     </keybind>
     <!-- browser -->
@@ -425,20 +425,20 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>thunar</name>
+          <name>pcmanfm</name>
         </startupnotify>
-        <command>thunar</command>
+        <command>pcmanfm</command>
       </action>
     </keybind>
     <!-- app launcher -->
     <keybind key="XF86Search">
       <action name="Execute">
-        <command>synapse</command>
+        <command>myrofi.sh</command>
       </action>
     </keybind>
     <keybind key="W-space">
       <action name="Execute">
-        <command>synapse</command>
+        <command>myrofi.sh</command>
       </action>
     </keybind>
     <keybind key="XF86LaunchA">
@@ -1154,9 +1154,12 @@
 -->
     <application class="*">
       <decor>no</decor>
+      <position>
+        <x>center</x>
+        <y>center</y>
+      </position>
     </application>
     <application name="*rxvt">
-      <desktop>all</desktop>
       <position>
         <x>center</x>
         <y>center</y>
@@ -1168,7 +1171,7 @@
         <y>center</y>
       </position>
     </application>
-    <application name="*thunar*">
+    <application name="*pcmanfm*">
       <position>
         <x>center</x>
         <y>center</y>
@@ -1181,6 +1184,7 @@
       </position>
     </application>
     <application name="*blueman*">
+      <desktop>all</desktop>
       <position>
         <x>center</x>
         <y>center</y>
@@ -1203,13 +1207,14 @@
       <desktop>all</desktop>
     </application>
     <application name="pavucontrol">
+      <desktop>all</desktop>
       <position>
         <x>center</x>
         <y>center</y>
       </position>
     </application>
     <application name="evolution">
-      <!-- <desktop>2</desktop> -->
+      <desktop>all</desktop>
       <position>
         <x>center</x>
         <y>center</y>
