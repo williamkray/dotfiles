@@ -216,6 +216,11 @@
         <command>~/.scripts/donger.sh glare</command>
       </action>
     </keybind>
+    <keybind key="F12">
+      <action name="Execute">
+        <command>~/.scripts/donger-picker.sh</command>
+      </action>
+    </keybind>
     <keybind key="C-A-Down">
       <action name="GoToDesktop">
         <to>down</to>
@@ -573,15 +578,20 @@
         <command>pulsectl.sh toggle</command>
       </action>
     </keybind>
+    <keybind key="XF86AudioMicMute">
+      <action name="Execute">
+        <command>pulse-mic-mute.sh</command>
+      </action>
+    </keybind>
     <!-- brightness control -->
     <keybind key="XF86MonBrightnessDown">
       <action name="Execute">
-        <command>min</command>
+        <command>light -U 5</command>
       </action>
     </keybind>
     <keybind key="XF86MonBrightnessUp">
       <action name="Execute">
-        <command>max</command>
+        <command>light -A 5</command>
       </action>
     </keybind>
     <!-- window control -->

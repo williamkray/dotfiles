@@ -1,10 +1,12 @@
-auto-randr.sh &
+#srandrd auto-randr.sh 
+libinput-gestures &
+fehbg.sh
 stalonetray -t -f3 --dockapp-mode &
 obsetlayout 0 2 2 0
 #xfce4-volumed &
 redshift &
 unclutter &
-xautolock -time 10 -locker ~/Projects/scripts/myslock.sh &
+xautolock -time 5 -locker ~/Projects/scripts/myslock.sh &
 indicator-kdeconnect &
 blueman-applet &
 compton -D 2 --inactive-dim .1 --vsync opengl-swc --backend glx --paint-on-overlay --glx-no-stencil --glx-no-rebind-pixmap -b
