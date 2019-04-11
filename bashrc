@@ -39,3 +39,4 @@ if [ "$TERM" = "linux" ]; then
     clear
 fi
 
+eval "$(onica-sso shell-init bash)"

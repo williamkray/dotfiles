@@ -383,7 +383,7 @@
     </keybind>
     <keybind key="A-Print">
       <action name="Execute">
-        <command>escrotum -C /tmp/Screenshot_%Y-%m-%d_%H-%M-%S.png</command>
+        <command>escrotum /tmp/Screenshot_%Y-%m-%d_%H-%M-%S.png</command>
       </action>
     </keybind>
     <!-- browser -->
