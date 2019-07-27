@@ -6,7 +6,7 @@
 
 ## load up a bunch of other things
 . ~/.scripts/git-prompt.sh
-. ~/.scripts/git-completion.bash
+. /usr/share/bash-completion/completions/git
 . ~/.scripts/pass.bash-completion
 . ~/.scripts/aws-prompt.sh
 

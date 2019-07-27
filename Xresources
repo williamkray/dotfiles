@@ -13,7 +13,7 @@ URxvt.scrollBar: false
 URxvt.iconFile:/usr/share/icons/Paper/32x32/apps/terminal.png
 URxvt.lineSpace: 1
 URxvt.letterspace: -2
-urxvt.font: xft:DejaVu Sans Mono for Powerline:size=10
+urxvt.font: xft:Inconsolata for Powerline:style=Medium:size=10,xft:Unifont:pixelsize,-*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
 !Disables the insanely annoying Ctrl+Shift shortcut that enters ISO14755 mode
 URxvt.iso14755: False
 
@@ -34,7 +34,7 @@ urxvt.keysym.Shift-Up: string:cd ..\n
 urxvt.keysym.Shift-Control-W: string:\001d
 urxvt.keysym.Shift-Control-V: perl:clipboard:paste
 urxvt.keysym.Shift-Control-C: perl:clipboard:copy
-urxvt.keysym.Shift-Control-R: string:rs_tag -a 'rs_agent_dev:download_cookbooks_once=true'\n
+!urxvt.keysym.Shift-Control-R: string:rs_tag -a 'rs_agent_dev:download_cookbooks_once=true'\n
 
 !bind control-shift-arrows to move between panes in tmux
 urxvt.keysym.Shift-Control-Up: string:\001\013

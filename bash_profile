@@ -9,7 +9,8 @@
 export PATH=$HOME/.local/bin:$PATH
 
 export EDITOR=vim
-export BROWSER=firefox-launcher.sh
+#export BROWSER=firefox-launcher.sh
+export BROWSER=firefox
 ## some pacaur vars
 export BUILDDIR="/tmp/pacaurtmp-$USER"
 #export PKGDEST="$HOME/Build/built"
