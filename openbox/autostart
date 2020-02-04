@@ -9,6 +9,7 @@ unclutter &
 xautolock -time 5 -locker ~/Projects/scripts/myslock.sh &
 indicator-kdeconnect &
 #blueman-applet &
-compton -D 2 --inactive-dim .1 --vsync --backend glx --glx-no-stencil --glx-no-rebind-pixmap -b
-sleep 10 && conky -c ~/Projects/dotfiles/conky.conf
-sleep 10 && conky -c ~/Projects/dotfiles/conky-music.conf
+picom -D 2 --inactive-dim .1 --vsync --backend glx --glx-no-stencil --glx-no-rebind-pixmap -b
+auto-randr.sh
+sleep 5 && conky -c ~/Projects/dotfiles/conky.conf
+sleep 5 && conky -c ~/Projects/dotfiles/conky-music.conf

@@ -12,3 +12,4 @@ alias stagent="eval \"$(ssh-agent -s)\""
 alias xdg-open='XDG_CURRENT_DESKTOP="GNOME" /usr/bin/xdg-open'
 alias bbstagent="eval \"$(ssh-agent -s)\" && ssh-add ~/Work/projects/beachbody/keys/*"
 alias netrestart="sudo systemctl restart netctl-auto@wlp3s0"
+alias rdpgd="remmina -c ~/.local/share/remmina/1562174061536.remmina"

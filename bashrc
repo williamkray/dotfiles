@@ -8,6 +8,7 @@
 . ~/.scripts/git-prompt.sh
 . /usr/share/bash-completion/completions/git
 . ~/.scripts/pass.bash-completion
+. /etc/bash_completion.d/*
 . ~/.scripts/aws-prompt.sh
 
 if [ -f ~/.bash_aliases ]; then
