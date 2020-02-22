@@ -10,6 +10,7 @@
 . ~/.scripts/pass.bash-completion
 . /etc/bash_completion.d/*
 . ~/.scripts/aws-prompt.sh
+. ~/.scripts/bw-helper-functions.sh
 
 if [ -f ~/.bash_aliases ]; then
   source ~/.bash_aliases

@@ -18,6 +18,8 @@ export XDG_CACHE_HOME=/dev/shm
 export TMUX_MASTER="tmux-master"
 complete -C '/usr/bin/aws_completer' aws
 
+export BW_SESSION=${BW_SESSION:-$(bw login bitwarden@williamkray.com --raw)}
+wait
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
