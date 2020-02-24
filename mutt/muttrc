@@ -1,0 +1,135 @@
+## basic imap and smtp config stuff, including getting imap/smtp un/pass from bitwarden
+set my_name = "William Kray"
+set imap_user = `bw get username d02d0d77-6ae7-473a-a863-ab3a004ddbc3`
+set imap_pass = `bw get password d02d0d77-6ae7-473a-a863-ab3a004ddbc3`
+set folder = "imaps://$imap_user@mail.kray.pw/"
+set spoolfile = "+INBOX"
+#set imap_check_subscribed
+mailboxes \
+  =INBOX \
+  =INBOX/updates \
+  =Archive \
+  =Archive/travel\ info \
+  =Archive/2019 \
+  =Junk \
+  =Drafts \
+  =Sent \
+  =Trash
+set smtp_url = "smtps://$imap_user@mail.kray.pw/"
+set ssl_starttls = yes
+set from = "$imap_user"
+set smtp_pass = "$imap_pass"
+set realname = "$my_name"
+
+## improve speed of things with caching
+set header_cache = "~/.mutt/cache"
+set message_cachedir = "~/.mutt/cache"
+
+## define sent and drafts folders
+set postponed = "+Drafts"
+set record = "+Sent"
+
+
+## disable passive mode, which only uses existing IMAP connections
+## this will ensure it tries to reconnect
+unset imap_passive
+set imap_keepalive = 300
+
+## check for new mail every X seconds
+set mail_check = 60
+
+## make it sort by threaded emails, with newest at the top of the screen
+set sort = "threads"
+set sort_aux = "reverse-last-date-received"
+
+## set signature file
+## can also use a command by ending with a pipe, like:
+##   set signature = "echo sent from $(uuidgen) \[human identifier\: William Kray\] |"
+## but this seems to not like newlines
+set signature = "~/.mutt/sig.txt"
+
+## set some color configurations
+color normal     white         default
+color hdrdefault green         default
+color quoted     cyan          default
+color quoted1    yellow        default
+color quoted2    red           default
+color signature  green         default
+color indicator  black         green
+color error      brightred     default
+color status     brightwhite   white
+color tree       brightmagenta default
+color tilde      brightblue    default
+color attachment brightyellow  magenta
+color markers    brightred     default
+color message    brightwhite   default
+color search     brightwhite   magenta
+color bold       brightyellow  green
+## mark mailboxes in the sidebar as blue if they contain
+## new or unread mail
+color sidebar_new cyan default
+
+
+# Color definitions when on a mono screen
+mono bold      bold
+mono underline underline
+mono indicator reverse
+mono error     bold
+
+# Colors for items in the reader
+color header brightyellow default "^(From|Subject):"
+color header brightcyan   default ^To:
+color header brightcyan   default ^Cc:
+mono  header bold                 "^(From|Subject):"
+
+set sidebar_visible = yes
+set sidebar_short_path = yes
+set sidebar_folder_indent = yes
+# ctrl-n, ctrl-p to select next, prev folder
+# # ctrl-o to open selected folder
+bind index,pager \CP sidebar-prev
+bind index,pager \CN sidebar-next
+bind index,pager \CO sidebar-open
+
+## render html automatically
+## use in conjunction with a ~/.mailcap file that leverages your chosen prioritized
+## html renderers. for example, my ~/.mailcap file includes the following:
+##
+##  text/html; firefox '%s'; test=test -n "$DISPLAY"; needsterminal;
+##  text/html; w3m -I %{charset} -T text/html; copiousoutput;
+##
+## this allows it to default to w3m as the renderer, but uses firefox if i choose
+## to open the html attachment with mailcap (hitting the 'm' key on the attachment)
+auto_view text/html
+alternative_order text/plain text/enriched text/html
+
+## speaking of which, let's just use the mailcap file in the mutt dir
+set mailcap_path = "~/.mutt/mailcap"
+
+## show pager/body/content at the same time like most mail clients
+set pager_index_lines = 10
+
+## macro to set as read and move to archive
+macro index,pager a ":set confirmappend=no delete=yes resolve=no\n<clear-flag>N<tag-prefix><save-message>=Archive\n:set confirmappend=yes delete=ask-yes resolve=yes\n<next-undeleted>"
+
+## macro to set read and move to trash
+macro index,pager d ":set confirmappend=no delete=yes resolve=no\n<clear-flag>N<tag-prefix><save-message>=Trash\n:set confirmappend=yes delete=ask-yes resolve=yes\n<next-undeleted>"
+
+## make reply-all default
+bind index r group-reply
+
+## unset g keybinding
+bind index g noop
+## go to top/bottom of index/pager
+bind index gg first-entry 
+bind index gG last-entry 
+bind pager gg top
+bind pager gG bottom
+
+## macros to jump to folders with 'gX' where X is the first letter of the folder name
+macro index,pager gi "<change-folder> =INBOX<enter>" "Jump to Inbox"
+macro index,pager ga "<change-folder> =Archive<enter>" "Jump to Archive"
+macro index,pager gu "<change-folder> =INBOX/updates<enter>" "Jump to Updates"
+macro index,pager gj "<change-folder> =Junk<enter>" "Jump to Junk"
+macro index,pager gj "<change-folder> =Junk<enter>" "Jump to Junk"
+
