@@ -21,6 +21,9 @@ set from = "$imap_user"
 set smtp_pass = "$imap_pass"
 set realname = "$my_name"
 
+## prompt on quit
+set quit = "ask-yes"
+
 ## stop paging at the bottom instead of moving to the next email
 set pager_stop = "yes"
 
@@ -30,6 +33,9 @@ set sleep_time = 0
 ## always reply to the given addresses and include the original message
 set fast_reply = "yes"
 set include = "yes"
+
+## include headers in the compose-editor
+set edit_headers = yes
 
 ## improve speed of things with caching
 set header_cache = "~/.mutt/cache"
@@ -46,7 +52,7 @@ unset imap_passive
 set imap_keepalive = 300
 
 ## check for new mail every X seconds
-set mail_check = 60
+set mail_check = 0
 
 ## make it sort by threaded emails, with newest at the top of the screen
 set sort = "threads"
@@ -136,9 +142,9 @@ bind index r group-reply
 bind index g noop
 ## go to top/bottom of index/pager
 bind index gg first-entry 
-bind index gG last-entry 
+bind index G last-entry 
 bind pager gg top
-bind pager gG bottom
+bind pager G bottom
 
 ## macros to jump to folders with 'gX' where X is the first letter of the folder name
 macro index,pager gi "<change-folder> =INBOX<enter>" "Jump to Inbox"
