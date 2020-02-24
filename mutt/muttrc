@@ -21,6 +21,16 @@ set from = "$imap_user"
 set smtp_pass = "$imap_pass"
 set realname = "$my_name"
 
+## stop paging at the bottom instead of moving to the next email
+set pager_stop = "yes"
+
+## speed up switching mailboxes
+set sleep_time = 0
+
+## always reply to the given addresses and include the original message
+set fast_reply = "yes"
+set include = "yes"
+
 ## improve speed of things with caching
 set header_cache = "~/.mutt/cache"
 set message_cachedir = "~/.mutt/cache"
@@ -47,6 +57,8 @@ set sort_aux = "reverse-last-date-received"
 ##   set signature = "echo sent from $(uuidgen) \[human identifier\: William Kray\] |"
 ## but this seems to not like newlines
 set signature = "~/.mutt/sig.txt"
+## put the signature above included replies
+set sig_on_top = yes
 
 ## set some color configurations
 color normal     white         default
@@ -87,9 +99,11 @@ set sidebar_short_path = yes
 set sidebar_folder_indent = yes
 # ctrl-n, ctrl-p to select next, prev folder
 # # ctrl-o to open selected folder
-bind index,pager \CP sidebar-prev
-bind index,pager \CN sidebar-next
-bind index,pager \CO sidebar-open
+#bind index,pager \CP sidebar-prev
+#bind index,pager \CN sidebar-next
+#bind index,pager \CO sidebar-open
+macro index,pager \CP "<sidebar-prev><sidebar-open>"
+macro index,pager \CN "<sidebar-next><sidebar-open>"
 
 ## render html automatically
 ## use in conjunction with a ~/.mailcap file that leverages your chosen prioritized
