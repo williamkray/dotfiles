@@ -90,7 +90,7 @@ color search     brightwhite   magenta
 color bold       brightyellow  green
 ## mark mailboxes in the sidebar as blue if they contain
 ## new or unread mail
-color sidebar_new cyan default
+color sidebar_new brightcyan default
 
 
 # Color definitions when on a mono screen
