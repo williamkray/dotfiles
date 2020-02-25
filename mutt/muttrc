@@ -11,9 +11,9 @@ mailboxes \
   =Archive \
   =Archive/travel\ info \
   =Archive/2019 \
-  =Junk \
   =Drafts \
   =Sent \
+  =Junk \
   =Trash
 set smtp_url = "smtps://$imap_user@mail.kray.pw/"
 set ssl_starttls = yes
@@ -23,6 +23,10 @@ set realname = "$my_name"
 
 ## prompt on quit
 set quit = "ask-yes"
+## don't ask about purging messages every time, just do it
+set delete = yes
+## don't ask about appending messages when saving to an existing folder
+set confirmappend = no
 
 ## stop paging at the bottom instead of moving to the next email
 set pager_stop = "yes"
@@ -44,6 +48,7 @@ set message_cachedir = "~/.mutt/cache"
 ## define sent and drafts folders
 set postponed = "+Drafts"
 set record = "+Sent"
+set trash = "+Trash"
 
 
 ## disable passive mode, which only uses existing IMAP connections
@@ -130,10 +135,10 @@ set mailcap_path = "~/.mutt/mailcap"
 set pager_index_lines = 10
 
 ## macro to set as read and move to archive
-macro index,pager a ":set confirmappend=no delete=yes resolve=no\n<clear-flag>N<tag-prefix><save-message>=Archive\n:set confirmappend=yes delete=ask-yes resolve=yes\n<next-undeleted>"
+macro index,pager a ":set confirmappend=no resolve=no\n<clear-flag>N<tag-prefix><save-message>=Archive\n:set confirmappend=yes resolve=yes\n<next-undeleted>"
 
 ## macro to set read and move to trash
-macro index,pager d ":set confirmappend=no delete=yes resolve=no\n<clear-flag>N<tag-prefix><save-message>=Trash\n:set confirmappend=yes delete=ask-yes resolve=yes\n<next-undeleted>"
+macro index,pager d ":set confirmappend=no resolve=no\n<clear-flag>N<tag-prefix><delete-message>:set confirmappend=yes resolve=yes\n<next-undeleted>"
 
 ## make reply-all default
 bind index r group-reply
@@ -151,5 +156,7 @@ macro index,pager gi "<change-folder> =INBOX<enter>" "Jump to Inbox"
 macro index,pager ga "<change-folder> =Archive<enter>" "Jump to Archive"
 macro index,pager gu "<change-folder> =INBOX/updates<enter>" "Jump to Updates"
 macro index,pager gj "<change-folder> =Junk<enter>" "Jump to Junk"
-macro index,pager gj "<change-folder> =Junk<enter>" "Jump to Junk"
+macro index,pager gd "<change-folder> =Drafts<enter>" "Jump to Drafts"
+macro index,pager gt "<change-folder> =Trash<enter>" "Jump to Trash"
+macro index,pager gs "<change-folder> =Sent<enter>" "Jump to Sent"
 
