@@ -135,13 +135,16 @@ set mailcap_path = "~/.mutt/mailcap"
 set pager_index_lines = 10
 
 ## macro to set as read and move to archive
-macro index,pager a ":set confirmappend=no resolve=no\n<clear-flag>N<tag-prefix><save-message>=Archive\n:set confirmappend=yes resolve=yes\n<next-undeleted>"
+macro index,pager a ":set resolve=no<enter><clear-flag>N<save-message>=Archive<enter>:set resolve=yes<enter><next-undeleted>" "Move to Archive and unset New flag"
 
 ## macro to set read and move to trash
-macro index,pager d ":set confirmappend=no resolve=no\n<clear-flag>N<tag-prefix><delete-message>:set confirmappend=yes resolve=yes\n<next-undeleted>"
+macro index,pager d ":set resolve=no<enter><clear-flag>N<delete-message>:set resolve=yes<enter><next-undeleted>" "Move to trash and unset New flag"
 
 ## make reply-all default
 bind index r group-reply
+
+## force refresh of mail
+bind index,pager R imap-fetch-mail
 
 ## unset g keybinding
 bind index g noop
