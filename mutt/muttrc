@@ -109,12 +109,8 @@ set sidebar_visible = yes
 set sidebar_short_path = yes
 set sidebar_folder_indent = yes
 # ctrl-n, ctrl-p to select next, prev folder
-# # ctrl-o to open selected folder
-#bind index,pager \CP sidebar-prev
-#bind index,pager \CN sidebar-next
-#bind index,pager \CO sidebar-open
-macro index,pager \CP "<sidebar-prev><sidebar-open>"
-macro index,pager \CN "<sidebar-next><sidebar-open>"
+macro index,pager \CP "<sidebar-prev><sidebar-open>" "Jump to previous folder in sidebar"
+macro index,pager \CN "<sidebar-next><sidebar-open>" "Jump to next folder in sidebar"
 
 ## render html automatically
 ## use in conjunction with a ~/.mailcap file that leverages your chosen prioritized
