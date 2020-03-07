@@ -8,7 +8,7 @@ eval $(gnome-keyring-daemon --start)
 fehbg.sh
 redshift &
 unclutter &
-xautolock -time 5 -locker ~/Projects/scripts/myslock.sh &
+xautolock -time 5 -locker ~/.scripts/screen-locker.sh &
 picom -c -r 12 -D 2 --inactive-dim .1 --vsync --backend glx --glx-no-stencil --glx-no-rebind-pixmap -b
 ~/.scripts/dwm-status.sh &
 exec dwm
