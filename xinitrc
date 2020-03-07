@@ -9,6 +9,7 @@ fehbg.sh
 redshift &
 unclutter &
 xautolock -time 5 -locker ~/Projects/scripts/myslock.sh &
-picom -D 2 --inactive-dim .1 --vsync --backend glx --glx-no-stencil --glx-no-rebind-pixmap -b
+picom -c -r 12 -D 2 --inactive-dim .1 --vsync --backend glx --glx-no-stencil --glx-no-rebind-pixmap -b
+~/.scripts/dwm-status.sh &
 exec dwm
 #exec openbox-session
