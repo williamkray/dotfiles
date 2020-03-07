@@ -4,6 +4,11 @@ source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
 ## touchpad settings
 syndaemon -t -k -i 2 -d
 xrdb -merge ~/Projects/dotfiles/Xresources
-#exec startxfce4
 eval $(gnome-keyring-daemon --start)
-exec openbox-session
+fehbg.sh
+redshift &
+unclutter &
+xautolock -time 5 -locker ~/Projects/scripts/myslock.sh &
+picom -D 2 --inactive-dim .1 --vsync --backend glx --glx-no-stencil --glx-no-rebind-pixmap -b
+exec dwm
+#exec openbox-session
