@@ -39,6 +39,9 @@ bwid() {
   done
 }
 
+## oft-referenced otps
+alias otp-sso="bwul && bwotp b9d05657-72ea-455b-a4ec-ab3a004ddbc3 | xclip -i -selection clipboard"
+
 ## tmuxify cmus
 run-cmus() {
   if [ ! $TMUX ] ; then
