@@ -15,7 +15,7 @@ source /usr/share/bash-completion/completions/git
 source ~/.scripts/pass.bash-completion
 source /etc/bash_completion.d/*
 source ~/.scripts/aws-prompt.sh
-source ~/.scripts/bw-helper-functions.sh
+#source ~/.scripts/bw-helper-functions.sh
 
 ## set a special prompt icon (arrow)
 ## this makes it easy to change the character

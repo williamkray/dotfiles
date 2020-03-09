@@ -63,11 +63,24 @@ run-mutt() {
     echo "not running in tmux, try again"
   else
     if ! pidof mutt ; then
-      mutt_cmd="tmux new-window -n mutt 'export BW_SESSION=${BW_SESSION:-$(bw unlock --raw)} ; mutt'"
+      tmux rename-window mutt && bwul && mutt
     else
-      mutt_cmd='tmux select-window -t mutt'
+      tmux select-window -t mutt
     fi
-      eval $mutt_cmd &
   fi
 }
 alias mutt="run-mutt"
+
+## tmuxify weechat
+run-weechat() {
+  if [ ! $TMUX ] ; then
+    echo "not running in tmux, try again"
+  else
+    if ! pidof weechat ; then
+      tmux rename-window weechat && weechat
+    else
+      tmux select-window -t weechat
+    fi
+  fi
+}
+alias weechat="run-weechat"
