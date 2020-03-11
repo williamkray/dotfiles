@@ -9,6 +9,18 @@ alias xdg-open='XDG_CURRENT_DESKTOP="GNOME" /usr/bin/xdg-open'
 alias netrestart="sudo systemctl restart netctl-auto@wlp4s0"
 alias irc="ssh -t kray docker attach apps_weechat_1"
 
+## we dont necessarily want to do this automaticall
+## as part of tmux.sh, in case we want to preserve bash history
+## or we're working on something we want to come back to
+## but this helps clean house a bit
+prunetmux() {
+  panes="$(tmux list-windows | grep bash | grep -v active | awk '{print $1}' | tr -d ':')"
+
+  for i in $panes ; do
+    tmux kill-window -t $i
+  done
+}
+
 ## functions to make using the bitwarden cli easier
 ## without having to remember everything
 # unlock the vault
