@@ -13,7 +13,7 @@ alias irc="ssh -t kray docker attach apps_weechat_1"
 ## without having to remember everything
 # unlock the vault
 bwul() {
-  export BW_SESSION=${BW_SESSION:-$(bw unlock --raw)}
+  export BW_SESSION=$(bw unlock --raw)
 }
 
 # search for items in the vault, and open it in a pager
