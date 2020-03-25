@@ -14,8 +14,8 @@ export EDITOR=vim
 #export BROWSER=firefox-launcher.sh
 export BROWSER=firefox
 ## some pacaur vars
-export BUILDDIR="/tmp/pacaurtmp-$USER"
-export PKGDEST="$HOME/Build/built"
+#export BUILDDIR="/tmp/pacaurtmp-$USER"
+#export PKGDEST="$HOME/"
 export XDG_CACHE_HOME=/dev/shm
 complete -C '/usr/bin/aws_completer' aws
 
