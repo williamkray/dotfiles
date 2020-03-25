@@ -13,7 +13,7 @@ fi
 source ~/.scripts/git-prompt.sh
 source /usr/share/bash-completion/completions/git
 source ~/.scripts/pass.bash-completion
-source /etc/bash_completion.d/*
+#source /etc/bash_completion.d/*
 source ~/.scripts/aws-prompt.sh
 #source ~/.scripts/bw-helper-functions.sh
 
