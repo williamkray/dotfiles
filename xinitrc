@@ -5,11 +5,13 @@ source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
 syndaemon -t -k -i 2 -d
 xrdb -merge ~/Projects/dotfiles/Xresources
 eval $(gnome-keyring-daemon --start)
-fehbg.sh
+## replace pretty wallpaper with matching color of terminal
+xsetroot -solid "#1D1F21"
+#fehbg.sh
 redshift &
 unclutter &
 xautolock -noclose -time 5 -locker ~/.scripts/screen-locker.sh -corners ---+ -cornerdelay 0 -cornerredelay 600 &
-picom -c -r 12 -D 2 --inactive-dim .1 --vsync --backend glx --glx-no-stencil --glx-no-rebind-pixmap -b
+#picom -c -r 12 -D 2 --inactive-dim .1 --vsync --backend glx --glx-no-stencil --glx-no-rebind-pixmap -b
 ~/.scripts/dwm-status.sh &
 exec dwm
 #exec openbox-session
