@@ -10,6 +10,9 @@ syntax enable
 " line numbers on
 set number
 
+" text width set to 80 columns (add line breaks)
+set tw=120
+
 "relative line numbers
 set relativenumber
 

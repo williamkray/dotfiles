@@ -19,9 +19,13 @@ export BROWSER=firefox
 export XDG_CACHE_HOME=/dev/shm
 complete -C '/usr/bin/aws_completer' aws
 
+# use wayland for mozilla apps
+export MOZ_ENABLE_WAYLAND=1
+
 #export BW_SESSION=${BW_SESSION:-$(bw unlock --raw)}
 #wait
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+#[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && export XDG_CURRENT_DESKTOP=sway && exec sway
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 eval "$(onica-sso shell-init bash)"

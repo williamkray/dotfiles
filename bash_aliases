@@ -7,7 +7,9 @@ alias wow="git status"
 alias hosts="sudo vim /etc/hosts"
 alias xdg-open='XDG_CURRENT_DESKTOP="GNOME" /usr/bin/xdg-open'
 alias netrestart="sudo systemctl restart netctl-auto@wlp4s0"
-alias irc="ssh -t kray docker attach apps_weechat_1"
+alias irc="ssh -t home docker attach apps_weechat_1"
+alias appgate="appgate && sudo systemctl stop appgate-resolver"
+alias icat="kitty +kitten icat"
 
 ## we dont necessarily want to do this automaticall
 ## as part of tmux.sh, in case we want to preserve bash history
@@ -25,7 +27,10 @@ prunetmux() {
 ## without having to remember everything
 # unlock the vault
 bwul() {
-  export BW_SESSION=$(bw unlock --raw)
+  tmp=$(mktemp)
+  bw unlock --raw > $tmp
+  export BW_SESSION=$(cat $tmp)
+  rm $tmp
 }
 
 # search for items in the vault, and open it in a pager
@@ -72,13 +77,16 @@ run-cmus() {
 }
 alias cmus="run-cmus"
 
-## tmuxify cmus
+## tmuxify mutt
 run-mutt() {
   if [ ! $TMUX ] ; then
     echo "not running in tmux, try again"
   else
     if ! pidof mutt ; then
-      tmux rename-window mutt && bwul && mutt
+      if ! [ $BW_SESSION ] ; then
+        bwul
+      fi
+      tmux rename-window mutt && mutt
     else
       tmux select-window -t mutt
     fi
