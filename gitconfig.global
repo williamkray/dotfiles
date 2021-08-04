@@ -1,0 +1,8 @@
+[user]
+	name = William Kray
+
+[includeIf "gitdir:~/Work/**"]
+  path = ~/Work/.gitconfig.inc
+
+[includeIf "gitdir:~/git/**"]
+  path = ~/git/.gitconfig.inc
