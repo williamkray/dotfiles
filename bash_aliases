@@ -10,6 +10,7 @@ alias netrestart="sudo systemctl restart netctl-auto@wlp4s0"
 alias irc="ssh -t home docker attach apps_weechat_1"
 alias appgate="appgate && sudo systemctl stop appgate-resolver"
 alias icat="kitty +kitten icat"
+alias feh='myfeh.sh'
 
 ## we dont necessarily want to do this automaticall
 ## as part of tmux.sh, in case we want to preserve bash history

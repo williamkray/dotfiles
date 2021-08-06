@@ -3,7 +3,7 @@ source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
 #xinput disable $(xinput list|grep -i touchscreen|awk -F '=' '{print $2}'|awk '{print $1}')
 ## touchpad settings
 syndaemon -t -k -i 2 -d
-xrdb ~/.Xresources
+xrdb -merge ~/.Xresources
 eval $(gnome-keyring-daemon --start)
 ## replace pretty wallpaper with matching color of terminal
 xsetroot -solid "#1D1F21"
