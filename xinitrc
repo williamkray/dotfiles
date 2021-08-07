@@ -15,5 +15,6 @@ xautolock -noclose -time 5 -locker ~/.scripts/screen-locker.sh -corners ---- -co
 #~/.scripts/dwm-status.sh &
 #exec dwm
 autorandr --change
+blueberry-tray
 exec i3
 #exec openbox-session
