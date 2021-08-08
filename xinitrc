@@ -1,6 +1,6 @@
 source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
 ## disable my touchscreen supposedly
-#xinput disable $(xinput list|grep -i touchscreen|awk -F '=' '{print $2}'|awk '{print $1}')
+xinput disable $(xinput list|grep -Ei 'touchscreen|finger'|awk -F '=' '{print $2}'|awk '{print $1}')
 xrdb -merge ~/.Xresources
 eval $(gnome-keyring-daemon --start)
 ## replace pretty wallpaper with matching color of terminal
