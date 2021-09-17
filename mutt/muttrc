@@ -9,7 +9,8 @@ mailboxes \
   =INBOX \
   =INBOX/updates \
   =Archive \
-  =Archive/travel\ info \
+  =Archive/2021 \
+  =Archive/2020 \
   =Archive/2019 \
   =Drafts \
   =Sent \
@@ -80,7 +81,7 @@ color quoted2    red           default
 color signature  green         default
 color indicator  black         green
 color error      brightred     default
-color status     brightwhite   white
+color status     black         yellow
 color tree       brightmagenta default
 color tilde      brightblue    default
 color attachment brightyellow  magenta
@@ -131,7 +132,7 @@ set mailcap_path = "~/.mutt/mailcap"
 set pager_index_lines = 10
 
 ## macro to set as read and move to archive
-macro index,pager a ":set resolve=no<enter><clear-flag>N<save-message>=Archive<enter>:set resolve=yes<enter><next-undeleted>" "Move to Archive and unset New flag"
+macro index,pager a ":set resolve=no<enter><clear-flag>N<save-message>=Archive/`date +%Y`<enter>:set resolve=yes<enter><next-undeleted>" "Move to Archive and unset New flag"
 
 ## macro to set read and move to trash
 macro index,pager d ":set resolve=no<enter><clear-flag>N<delete-message>:set resolve=yes<enter><next-undeleted>" "Move to trash and unset New flag"
