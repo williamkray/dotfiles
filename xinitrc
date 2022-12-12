@@ -11,8 +11,6 @@ xautolock -noclose -time 5 -locker ~/.scripts/screen-locker.sh -corners ---- -co
 ## use this file for screenlock and dunst pausing
 echo '' > ~/.pause
 autorandr --change
-if [[ $(hostname) == turbotuber ]]; then
-  batt-stat.sh &
-fi
+batt-stat.sh &
 blueberry-tray
 exec i3
