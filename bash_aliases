@@ -8,6 +8,8 @@ alias xdg-open='XDG_CURRENT_DESKTOP="GNOME" /usr/bin/xdg-open'
 alias irc="ssh -t home docker attach apps_weechat_1"
 alias icat="kitty +kitten icat"
 alias feh='myfeh.sh'
+alias vim='nvim'
+alias vimdiff='nvim -d'
 
 ## we dont necessarily want to do this automaticall
 ## as part of tmux.sh, in case we want to preserve bash history
