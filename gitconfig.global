@@ -6,3 +6,6 @@
 
 [includeIf "gitdir:~/git/**"]
   path = ~/git/.gitconfig.inc
+
+[init]
+	defaultBranch = main

@@ -8,6 +8,8 @@
 if [ -f ~/.bash_aliases ]; then
   source ~/.bash_aliases
 fi
+## only load this alias if we're using kitty as term emulator
+[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
 ## load up a bunch of other things
 source ~/.scripts/git-prompt.sh
