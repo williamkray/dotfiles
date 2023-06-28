@@ -27,5 +27,6 @@ export MOZ_ENABLE_WAYLAND=1
 #[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
 [[ -z $DISPLAY && $XDG_VTNR -eq 2 ]] && exec startx
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && export XDG_CURRENT_DESKTOP=sway && exec sway
+[[ -z $DISPLAY && $XDG_VTNR -eq 3 ]] && export XDG_CURRENT_DESKTOP=hyprland && exec Hyprland
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
