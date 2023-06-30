@@ -7,13 +7,18 @@
     // Choose the order of the modules
     "modules-left": ["wlr/workspaces"],
     "modules-center": [],
-    "modules-right": ["pulseaudio", "network", "battery", "clock", "hyprland/submap", "tray"],
+    "modules-right": [ "hyprland/submap", "pulseaudio", "network", "battery", "clock", "custom/pause", "tray"],
     "tray": {
         // "icon-size": 21,
         "spacing": 10
     },
     "hyprland/submap": {
       "format": "{}",
+    },
+    "custom/pause": {
+      "exec": "/home/wreck/git/scripts/get-pause.sh",
+      "interval": 1,
+      "on-click": "pause.sh"
     },
     "wlr/workspaces": {
       "on-click": "activate"

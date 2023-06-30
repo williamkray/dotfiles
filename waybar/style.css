@@ -36,6 +36,10 @@ tooltip label {
     background: #b5bd68;
 }
 
+#custom-pause {
+  background: #cc6666;
+}
+
 #workspaces button.active {
     background: #b5bd68;
     color: #1d1f21;
