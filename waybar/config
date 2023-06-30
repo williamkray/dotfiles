@@ -16,7 +16,7 @@
       "format": "{}",
     },
     "custom/pause": {
-      "exec": "/home/wreck/git/scripts/get-pause.sh",
+      "exec": "get-pause.sh",
       "interval": 1,
       "on-click": "pause.sh"
     },
