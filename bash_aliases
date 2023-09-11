@@ -10,6 +10,7 @@ alias icat="kitty +kitten icat"
 alias feh='myfeh.sh'
 alias vim='nvim'
 alias vimdiff='nvim -d'
+alias wp="waypipe --video=hw -c lz4=7 ssh turbotuber"
 
 ## we dont necessarily want to do this automaticall
 ## as part of tmux.sh, in case we want to preserve bash history
