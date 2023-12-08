@@ -21,7 +21,7 @@
       "on-click": "pause.sh"
     },
     "hyprland/workspaces": {
-      "show-special": "true",
+      "show-special": true,
       "on-click": "activate"
     },
     "clock": {
