@@ -228,7 +228,7 @@
     # Useful to enforce the timeout set by dunst configuration. Without this
     # parameter, an application may close the notification sent before the 
     # user defined timeout.
-    ignore_dbusclose = false
+    ignore_dbusclose = true
 
     ### Legacy
 
@@ -295,7 +295,7 @@
     background = "#222222"
     foreground = "#888888"
     highlight = "#b5bd68"
-    timeout = 10
+    timeout = 15
     # Icon for notifications with low urgency, uncomment to enable
     #icon = /path/to/icon
 
@@ -303,7 +303,7 @@
     background = "#1d1f21"
     foreground = "#c5c8c6"
     highlight = "#b5bd68"
-    timeout = 7
+    timeout = 15
     # Icon for notifications with normal urgency, uncomment to enable
     #icon = /path/to/icon
 
