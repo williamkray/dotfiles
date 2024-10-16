@@ -1,11 +1,11 @@
 [user]
-	name = William Kray
+  name = William Kray
+
+[includeIf "gitdir:~/Code/**"]
+  path = ~/Code/.gitconfig.inc
 
 [includeIf "gitdir:~/Caylent/**"]
   path = ~/Caylent/.gitconfig.inc
 
-[includeIf "gitdir:~/git/**"]
-  path = ~/git/.gitconfig.inc
-
 [init]
-	defaultBranch = main
+  defaultBranch = main
